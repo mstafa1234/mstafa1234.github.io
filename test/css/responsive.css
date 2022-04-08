@@ -1,0 +1,198 @@
+@media screen and (max-width: 1384px) {
+    
+    .form .card .right{
+        padding: 35px;
+    }
+
+    .form .card .right .check {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .form .card .right .check label, .form .card .right .check label img{
+        width: 100%;
+    }
+
+    .step_two .step_two_right, .step_three .step_three_right{
+        padding-left: 80px;
+    }
+    
+    .step_two .step_two_right h2,  .step_three .step_three_right h2{
+        padding-right: 80px;
+    }
+
+
+}
+
+@media screen and (max-width: 1000px) {
+    .form .card .left{
+        width: 50%;
+    }
+    .form .card .right{
+        width: 50%;
+    }
+    .form .card .right .check {
+        width: 50%;
+    }
+    .form .card .left .first_step_arrow{
+        display: none;
+    }
+
+    .step_two .step_two_left, .step_three .step_three_left{
+        display: none;
+    }
+
+    .step_two .step_two_right, .step_three .step_three_right {
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+        padding-left: 30px;
+    }
+
+    .step_two .step_two_right .step_two_check, .step_three .step_three_right .step_three_check {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form .card .step_two .step_two_right h2, .form .card .step_three .step_three_right h2 {
+        margin-bottom: 10px;
+        padding-right: 0px;
+        margin-top: 80px;
+        padding-right: 30px;
+    }
+    
+    .step_two .step_two_right .step_two_check label p, .step_three .step_three_right .step_three_check label p {
+        padding-top: 10px;
+        padding-left: 0px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 890px) {
+    .form .card {
+        flex-direction: column;
+    }
+    .form .card .left .first_step_title {
+        position: static;
+        text-align: center;
+        margin: 30px;
+    }
+
+    .form .card .left .first_step_title p{
+        padding-right: 0px;
+    }
+
+    .form .card .left{
+        width: 100%;
+    }
+    .form .card .right{
+        width: 100%;
+    }
+    .form .card .right .check {
+        width: 50%;
+    }
+
+
+    .step_two .step_two_left {
+        display: none;
+    }
+
+    .step_two .step_two_right {
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+        padding-left: 30px;
+    }
+
+    .step_two .step_two_right .step_two_check {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form .card .step_two .step_two_right h2 {
+        font-size: 35px;
+        margin-bottom: 10px;
+        padding-right: 0px;
+        margin-top: 80px;
+        padding-right: 30px;
+    }
+    
+    .step_two .step_two_right .step_two_check label p {
+        font-size: 14px;
+        padding-top: 10px;
+        padding-left: 0px;
+    }
+
+    .step_two .step_two_right .check label{
+        width: 282px;
+        height: 44px;
+    }
+
+    
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .form .card {
+        flex-direction: column;
+    }
+    .form .card .left .first_step_title {
+        position: static;
+        margin: 70px 0 0 0;
+    }
+
+    .form .card .left{
+        width: 100%;
+    }
+    .form .card .right{
+        width: 100%;
+        padding: 10px;
+    }
+    .form .card .right .check {
+        width: 50%;
+    }
+
+    .form .card .left .first_step_title h1, .step_two .step_two_right h2, .step_three .step_three_right h2  {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    
+    .form .card .left .first_step_title p, .step_two .step_two_right .step_two_check label p, .step_three .step_three_right .step_three_check label p{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .form .first_step_btn {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    
+    .form .first_step_btn .first_step_next {
+        color: #000;
+        background-color: #ef8949;
+        border-radius: 56.5px;
+        padding: 8px 35px;
+        border: none;
+        font-size: 18px;
+        margin: 0;
+    }
+
+
+
+    
+
+}
+

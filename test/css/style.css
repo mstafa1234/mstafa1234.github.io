@@ -1,0 +1,879 @@
+@font-face {
+    font-family: "QueensCondensed";
+    src: url("../fonts/QueensCondensed_W-Regular.woff2") format("woff2"),
+    url("../fonts/QueensCondensed_W-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "SuisseIntl";
+    src: url("../fonts/SuisseIntl-Regular.ttf") format("truetype"),
+    url("../fonts/SuisseIntl-Medium.ttf") format("truetype"),
+    url("../fonts/SuisseIntl-Medium.otf") format("opentype"),
+    url("../fonts/SuisseIntl-Regular.otf") format("opentype");
+    
+}
+
+h1, h2 {
+    font-family: 'QueensCondensed', Arial, sans-serif;
+    font-weight: normal;
+}
+
+p{
+    font-family: 'SuisseIntl', Arial, sans-serif;
+    font-weight: normal;
+}
+
+button {
+    font-family: 'SuisseIntl', Arial, sans-serif;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 25px;
+    opacity: 0.4;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1512px;
+    margin: 0 auto;
+}
+
+
+
+.form {
+    height: 100vh;
+}
+
+
+/*start progress*/
+#progress_bar {
+    width: 12.5%;
+    position: fixed;
+    display: none;
+    top: 0;
+    background-color: #CAC8F6;
+    height: 25px;
+    z-index: 1;
+    transition: 0.4s linear;  
+    transition-property: width, background-color;
+}
+
+
+
+/*end progress*/
+
+/*step 1*/
+
+.form .card{
+    display: flex;
+}
+
+.form .card .left {
+    width: 41%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.form .card .left .first_step_title {
+    margin: 0 auto;
+    align-self: center;
+    padding: 0 42px 0 42px;
+    position: fixed;
+}
+
+
+.form .card .left .first_step_title h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.form .card .left .first_step_title p {
+    font-size: 20px;
+    padding-right: 105px;
+}
+
+.form .card .left .first_step_arrow{
+    padding: 10px;
+    animation: bounce 0.6s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    position: fixed;
+}
+
+@keyframes bounce {
+    from { transform: translate3d(0, 0, 0);     }
+    to   { transform: translate3d(0, 10px, 0); }
+}
+
+.form .card .right {
+    width: 59%;
+    display: flex;
+    flex-wrap: wrap;
+    /*overflow: hidden;*/
+    height: 100vh;
+    padding-top: 15px;
+}
+
+.form .card .right .check {
+    width: 33.33%;
+}
+
+.form .card .right .check label img:hover{
+    box-shadow:2px 6px 7px rgba(28,34,51,.2);
+    outline:none;
+}
+
+
+.form .card .right .check label img {
+    border-radius: 44px;
+}
+
+
+
+
+.form .card .right .check input[type="checkbox"][id^="cb"] {
+    display: none;
+  }
+  
+.form .card .right .check label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+  
+.form .card .right .check label:before {
+    background-color: white;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    border: 1px solid grey;
+    position: absolute;
+    top: 34px;
+    right: 64px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+    z-index: 1;
+}
+  
+.form .card .right .check label img {
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+}
+  
+.form .card .right .check :checked + label:before {
+    content: "✓";
+    background-color: #34455F;
+    transform: scale(1);
+}
+  
+.form .card .right .check :checked + label img {
+    transform: scale(0.9);
+    z-index: -1;
+}
+
+.form .first_step_btn {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 15.78%;
+    background-color: #fff;
+    opacity: 85%;
+}
+
+.form .first_step_btn .first_step_next {
+    color: #000;
+    background-color: #ef8949;
+    border-radius: 56.5px;
+    padding: 25px 90px;
+    border: none;
+    margin-top: 25px;
+    margin-right: 25px;
+    float: right;
+}
+
+/*step 1*/
+
+/*step 2*/
+
+
+.step_two .step_two_left{
+    width: 47%;
+    background-image: url("../images/image_30.png");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.step_two .step_two_right{
+    width: 53%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 150px;
+}
+
+.step_two .step_two_right h2 {
+    font-size: 60px;
+    margin-bottom: 60px;
+    padding-right: 140px;
+}
+
+.step_two .step_two_right .step_two_check label p {
+    font-size: 22px;
+    padding-top: 13px;
+    padding-left: 23px;
+}
+
+.step_two .step_two_right .check input[type="radio"][id^="cc"] {
+    display: none;
+  }
+  
+.step_two .step_two_right .check label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    background-color: #CAC8F6;
+    width: 500px;
+    height: 58px;
+    border-radius: 10px;
+    margin-bottom: 28px;
+}
+  
+.step_two .step_two_right .check label:before {
+    background-color: white;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    border: 1px solid grey;
+    position: absolute;
+    top: -13px;
+    right: 0px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+    z-index: 1;
+}
+  
+.step_two .step_two_right .check label p {
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+}
+  
+.step_two .step_two_right .check :checked + label:before {
+    content: "✓";
+    background-color: #F9EFDB;
+    color: #352C26;
+    transform: scale(1);
+}
+  
+.step_two .step_two_right .check :checked + label p {
+    transform: scale(0.9);
+    z-index: -1;
+}
+
+.form .step_two_btn {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 15.78%;
+    background-color: #fff;
+    opacity: 85%;
+}
+
+.form .step_two_btn .step_two_next {
+    color: #000;
+    background-color: #ef8949;
+    border-radius: 56.5px;
+    padding: 25px 90px;
+    border: none;
+    margin-top: 25px;
+    margin-right: 25px;
+    float: right;
+}
+
+/*step 2*/
+
+
+/*step 3*/
+
+
+.step_three .step_three_left{
+    width: 47%;
+    background-image: url("../images/image_30.png");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.step_three .step_three_right{
+    width: 53%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 150px;
+}
+
+
+.step_three .step_three_right h2 {
+    font-size: 60px;
+    margin-bottom: 60px;
+    padding-right: 140px;
+}
+
+.step_three .step_three_right .step_three_check label p {
+    font-size: 22px;
+    padding-top: 13px;
+    padding-left: 23px;
+}
+
+
+.step_three .step_three_right .check input[type="checkbox"][id^="ce"] {
+    display: none;
+  }
+  
+.step_three .step_three_right .check label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    background-color: #CAC8F6;
+    width: 500px;
+    height: 58px;
+    border-radius: 10px;
+    margin-bottom: 28px;
+}
+  
+.step_three .step_three_right .check label:before {
+    background-color: white;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    border: 1px solid grey;
+    position: absolute;
+    top: -13px;
+    right: 0px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+    z-index: 1;
+}
+  
+.step_three .step_three_right .check label p {
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+}
+  
+.step_three .step_three_right .check :checked + label:before {
+    content: "✓";
+    background-color: #F9EFDB;
+    color: #352C26;
+    transform: scale(1);
+}
+  
+.step_three .step_three_right .check :checked + label p {
+    transform: scale(0.9);
+    z-index: -1;
+}
+
+.form .step_three_btn {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 15.78%;
+    background-color: #fff;
+    opacity: 85%;
+}
+
+.form .step_three_btn .step_three_next {
+    color: #000;
+    background-color: #ef8949;
+    border-radius: 56.5px;
+    padding: 25px 90px;
+    border: none;
+    margin-top: 25px;
+    margin-right: 25px;
+    float: right;
+}
+
+
+/*step 3*/
+
+/*step 4*/
+
+
+.form .step_four .right .check input[type="checkbox"][id^="cd"] {
+    display: none;
+  }
+
+.form .step_four .right .step_four_check label {
+    border-radius: 44px !important;
+    width: 95%;
+    background-color: #F4E6E6;
+    text-align: center;
+    padding: 50px 0px 44px 0px;
+    margin-bottom: 15px;
+} 
+
+.form .step_four .step_four_right .step_four_check label:before {
+    background-color: white;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    border: 1px solid grey;
+    position: absolute;
+    top: 80px;
+    right: 68px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+    z-index: 1;
+}
+
+.form .step_four .step_four_right .step_four_check :checked + label:before {
+    content: "✓";
+    background-color: #34455F;
+    transform: scale(2);
+}
+  
+.form .step_four .right .step_four_check img {
+    border-radius: 103px !important;
+} 
+
+/*step 4*/
+
+/*step 5*/
+
+
+.form .step_five .right .check input[type="checkbox"][id^="cf"] {
+    display: none;
+  }
+
+  .form .step_five .right .step_five_check label {
+    border-radius: 44px !important;
+    width: 95%;
+    background-color: #F4E6E6;
+    text-align: center;
+    padding: 50px 0px 44px 0px;
+    margin-bottom: 15px;
+} 
+
+.form .step_five .step_five_right .step_five_check label:before {
+    background-color: white;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    border: 1px solid grey;
+    position: absolute;
+    top: 80px;
+    right: 68px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+    z-index: 1;
+}
+
+.form .step_five .step_five_right .step_five_check :checked + label:before {
+    content: "✓";
+    background-color: #34455F;
+    transform: scale(2);
+}
+  
+.form .step_five .right .step_five_check img {
+    border-radius: 103px !important;
+} 
+
+/*step 5*/
+
+/*step 6*/
+
+
+.form .step_sex .step_sex_left{
+    width: 47%;
+    background-image: url("../images/image 16.png");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.form .step_sex .step_sex_right{
+    width: 53%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 150px;
+}
+
+.form .step_sex .step_sex_right h2{
+    font-size: 60px;
+    margin-bottom: 60px;
+    padding-right: 140px;
+}
+
+.form .step_sex .step_sex_right label p {
+    font-size: 22px;
+    padding-top: 13px;
+    padding-left: 23px;
+}
+
+
+.form .step_sex .step_sex_right .check input[type="checkbox"][id^="cs"] {
+    display: none;
+  }
+  
+.step_sex .step_sex_right .check label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    background-color: #CAC8F6;
+    width: 500px;
+    height: 58px;
+    border-radius: 10px;
+    margin-bottom: 28px;
+}
+  
+.step_sex .step_sex_right .check label:before {
+    background-color: white;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    border: 1px solid grey;
+    position: absolute;
+    top: -13px;
+    right: -8px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+    z-index: 1;
+}
+  
+.step_sex .step_sex_right .check label p {
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+}
+  
+.step_sex .step_sex_right .check :checked + label:before {
+    content: "✓";
+    background-color: #F9EFDB;
+    color: #352C26;
+    transform: scale(1);
+}
+  
+.step_sex .step_sex_right .check :checked + label p {
+    transform: scale(0.9);
+    z-index: -1;
+}
+
+.form .step_sex_btn {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 15.78%;
+    background-color: #fff;
+    opacity: 85%;
+}
+
+.form .step_sex_btn .step_sex_next {
+    color: #000;
+    background-color: #ef8949;
+    border-radius: 56.5px;
+    padding: 25px 90px;
+    border: none;
+    margin-top: 25px;
+    margin-right: 25px;
+    float: right;
+}
+
+/*step sex*/
+
+/*step seven*/
+
+.step_seven .step_seven_left{
+    width: 47%;
+    background-image: url("../images/image 16.png");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.step_seven .step_seven_right{
+    width: 53%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 150px;
+}
+
+.step_seven .step_seven_right h2 {
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+
+.step_seven .step_seven_right label p{
+    font-size: 22px;
+    padding-top: 13px;
+    padding-left: 23px;
+}
+
+.step_seven .step_seven_right .check input[type="checkbox"][id^="cv"] {
+    display: none;
+  }
+  
+.step_seven .step_seven_right .check label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    background-color: #CAC8F6;
+    width: 500px;
+    height: 58px;
+    border-radius: 10px;
+    margin-bottom: 28px;
+}
+  
+.step_seven .step_seven_right .check label:before {
+    background-color: white;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    border: 1px solid grey;
+    position: absolute;
+    top: -13px;
+    right: -8px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+    z-index: 1;
+}
+  
+.step_seven .step_seven_right .check label p {
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+}
+  
+.step_seven .step_seven_right .check :checked + label:before {
+    content: "✓";
+    background-color: #F9EFDB;
+    color: #352C26;
+    transform: scale(1);
+}
+  
+.step_seven .step_seven_right .check :checked + label p {
+    transform: scale(0.9);
+    z-index: -1;
+}
+
+.form .step_seven_btn {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 15.78%;
+    background-color: #fff;
+    opacity: 85%;
+}
+
+.form .step_seven_btn .step_seven_next {
+    color: #000;
+    background-color: #ef8949;
+    border-radius: 56.5px;
+    padding: 25px 90px;
+    border: none;
+    margin-top: 25px;
+    margin-right: 25px;
+    float: right;
+}
+
+
+/*step seven*/
+
+
+/*step eight*/
+.form .step_eight{
+    justify-content: space-between !important;
+}
+
+.form .card .step_eight_right {
+    padding-top: 140px;
+    padding-left: 50px;
+    width: 717px;
+    height: 708px;
+    margin-bottom: 59px;
+    margin-right: 60px;
+}
+
+.form .card .right .step_eight_check input[type="checkbox"][id^="cm"] {
+    display: none;
+  }
+
+  .form .card .right .step_eight_check {
+      width: 25%;
+  }
+  
+.form .card .right .step_eight_check label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #F7F4F1;
+    padding: 50px;
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form .card .right .step_eight_check label:hover{
+    transform: scale(1.04);
+    box-shadow: 0 7px 20px rgb(0 0 0 / 10%);
+}
+
+
+.form .card .right .step_eight_check label p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: max-content;
+}
+
+.form .card .right .step_eight_check:last-child label{
+    margin-bottom: 40px;
+}
+
+.form .card .right .step_eight_check label img {
+    vertical-align: middle;
+    border-radius: 0 !important;
+    height: 30px;
+}
+
+
+.form .card .right .step_eight_check label:before {
+    background-color: white;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    border: 1px solid grey;
+    position: absolute;
+    top: 50px;
+    right: 25px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+    z-index: 1;
+}
+  
+  
+.form .card .right .step_eight_check :checked + label:before {
+    content: "✓";
+    background-color: #F9EFDB;
+    color: #000;
+    transform: scale(1);
+    border: none;
+}
+
+.form .card .right .step_eight_check :checked + label {
+    background-color: #F3DFB7;
+    z-index: 1;
+}
+
+/*step eight*/
+
+/*step nine*/
+
+.form .card .step_nine_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 213px;
+    margin-bottom: 200px;
+    margin-left: 120px;
+}
+
+.form .card .step_nine_left .step_nine_title h2{
+    font-size: 70px;
+}
+
+.form .card .step_nine_left .step_nine_title p{
+    font-size: 20px;
+}
+
+.form .card .step_nine_left .step_nine_footer p{
+    font-size: 15px;
+}
+
+.form .card .step_nine_right {
+    background-color: #FAF3E9;
+    justify-content: center;
+    align-items: center;
+}
+
+.form .card .step_nine_right input{
+    height: 70px;
+    width: 460px;
+    background: transparent;
+    border: none;
+    border-left: 1px solid #000;
+    padding-left: 30px;
+    margin-top: -120px;
+    font-size: 50px;
+    outline: none;
+}
+
+.form .card .step_nine_right input::placeholder {
+    font-size: 50px;
+}
+
+.form .card .first_step_btn #submit {
+    opacity: 1;
+}
+/*step nine*/
+
+.form .card{ display: none;}
+  
+
+

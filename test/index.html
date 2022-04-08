@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+    <!--start progress-->
+    <div id="progress_bar"></div>
+    <!--end progress-->
+
+
+    <div class="container">
+
+    <!--start form -->
+    <div class="form" data-multi-step>
+
+        
+
+        <!--first step-->
+        <div class="card first_step data-step">
+            <div class="first_step_left left">
+                <div class="first_step_title">
+                    <h1>Sélectionnez les pièces qui vous font rêver.</h1>
+                    <p>Il est parfois compliqué de faire des choix alors choissiez en plusieurs.</p>
+                </div>
+                <div class="first_step_arrow">
+                    <img src="images/Arrow 2.png" alt="arrow">
+                </div>
+            </div>
+            
+            <div class="first_step_right right">
+                <div class="first_step_check check">
+                    <input type="checkbox" name="" id="cb1">
+                    <label for="cb1"><img src="images/image 31.png" alt="interieur decor"></label>
+                    
+                </div>
+                <div class="first_step_check check">
+                    <input type="checkbox" name="" id="cb2">
+                    <label for="cb2"> <img src="images/image 31.png" alt="interieur decor"></label>
+
+                </div>
+                <div class="first_step_check check">
+                    <input type="checkbox" name="" id="cb3">
+                    <label for="cb3"> <img src="images/image 31.png" alt="interieur decor"></label>
+
+                </div>
+                <div class="first_step_check check">
+                    <input type="checkbox" name="" id="cb4">
+                    <label for="cb4"> <img src="images/image 31.png" alt="interieur decor"></label>
+
+                </div>
+                <div class="first_step_check check">
+                    <input type="checkbox" name="" id="cb5">
+                    <label for="cb5"> <img src="images/image 31.png" alt="interieur decor"></label>
+
+                </div>
+                <div class="first_step_check check">
+                    <input type="checkbox" name="" id="cb6">
+                    <label for="cb6"> <img src="images/image 31.png" alt="interieur decor"></label>
+
+                </div>
+                <div class="first_step_check check">
+                    <input type="checkbox" name="" id="cb7">
+                    <label for="cb7"> <img src="images/image 31.png" alt="interieur decor"></label>
+
+                </div>
+                <div class="first_step_check check">
+                    <input type="checkbox" name="" id="cb8">
+                    <label for="cb8"> <img src="images/image 31.png" alt="interieur decor"></label>
+
+                </div>
+                <div class="first_step_check check">
+                    <input type="checkbox" name="" id="cb9">
+                    <label for="cb9"> <img src="images/image 31.png" alt="interieur decor"></label>
+
+                </div>
+                <div class="first_step_check check">
+                    <input type="checkbox" name="" id="cb10">
+                    <label for="cb10"><img src="images/image 31.png" alt="interieur decor"></label>
+                </div>
+                <div class="first_step_check check">
+                    <input type="checkbox" name="" id="cb11">
+                    <label for="cb11"><img src="images/image 31.png" alt="interieur decor"></label>
+                </div>
+                <div class="first_step_check check">
+                    <input type="checkbox" name="" id="cb12">
+                    <label for="cb12"><img src="images/image 31.png" alt="interieur decor"></label>
+                </div>
+                <div class="first_step_check check">
+                    <input type="checkbox" name="" id="cb13">
+                    <label for="cb13"><img src="images/image 31.png" alt="interieur decor"></label>
+                </div>
+                <div class="first_step_check check">
+                    <input type="checkbox" name="" id="cb14">
+                    <label for="cb14"><img src="images/image 31.png" alt="interieur decor"></label>
+                </div>
+                <div class="first_step_check check">
+                    <input type="checkbox" name="" id="cb15">
+                    <label for="cb15"><img src="images/image 31.png" alt="interieur decor"></label>
+                </div>
+
+                <div style="width: 1px; height: 150px;"></div>
+            </div>
+
+
+
+            <div class="first_step_btn">
+                <button class="first_step_next" data-next onclick="nextPrev(1)" disabled>Suivant</button>
+            </div>
+
+
+        </div>
+        <!--end first step-->
+
+        <!--step 2-->
+        <div class="card step_two data-step">
+            <div class="step_two_left">
+                <!-- <img src="images/image_30.png" alt="" > -->
+            </div>
+            <div class="step_two_right">
+                <h2>Qu'est-ce qui vous amène ici aujourd'hui ? </h2>
+                <div class="step_two_check check">
+                    <input type="radio" name="Step_Two" id="cc1" onchange="nextPrev(1)">
+                    <label for="cc1"><p>Je recherche des inspirations</p></label>
+                </div>
+                <div class="step_two_check check">
+                    <input type="radio" name="Step_Two" id="cc2" onchange="nextPrev(1)">
+                    <label for="cc2"><p>J’eménage et j’ai besoin d’aide</p></label>
+                </div>
+                <div class="step_two_check check">
+                    <input type="radio" name="Step_Two" id="cc3" onchange="nextPrev(1)">
+                    <label for="cc3"><p>Je veux changer de déco</p></label>
+                </div>
+                <div class="step_two_check check">
+                    <input type="radio" name="Step_Two" id="cc4" onchange="nextPrev(1)">
+                    <label for="cc4"><p>Ca avait l’air trop cool</p></label>
+                </div>
+                <div style="width: 1px; height: 70px;"></div>
+            </div>
+
+            <div class="step_two_btn" style="display:none;">
+                <button class="step_two_next" style="display:none;">Suivant</button>
+            </div>
+        </div>
+        <!-- end step 2-->
+
+        <!--step 3-->
+        <div class="card step_three data-step">
+            <div class="step_three_left">
+                <!-- <img src="images/image_30.png" alt="" > -->
+            </div>
+            <div class="step_three_right">
+                <h2>Qu’est ce qui vous préoccupe le plus... </h2>
+                <div class="step_three_check check">
+                    <input type="checkbox" name="" id="ce1">
+                    <label for="ce1"><p>Le manque d’espace</p></label>
+                </div>
+                <div class="step_three_check check">
+                    <input type="checkbox" name="" id="ce2">
+                    <label for="ce2"><p>L’harmonie globale de ma pièce</p></label>
+                </div>
+                <div class="step_three_check check">
+                    <input type="checkbox" name="" id="ce3">
+                    <label for="ce3"><p>Le manque de flexibilité (sport, télétravail)</p></label>
+                </div>
+                <div class="step_three_check check">
+                    <input type="checkbox" name="" id="ce4">
+                    <label for="ce4"><p>Autre chose</p></label>
+                </div>
+                <div style="width: 1px; height: 70px;"></div>
+            </div>
+
+            <div class="step_three_btn">
+                <button class="step_three_next" data-next onclick="nextPrev(1)" disabled>Suivant</button>
+            </div>
+        </div>
+        <!-- end step 3-->
+
+        <!--step 4-->
+        <!-- <div class="card step_four data-step">
+            <div class="step_four_left left">
+                <div class="first_step_title">
+                    <h1>Sélectionnez les pièces qui vous font rêver.</h1>
+                    <p>Il est parfois compliqué de faire des choix alors choissiez en plusieurs.</p>
+                </div>
+                <div class="first_step_arrow">
+                    <img src="images/Arrow 2.png" alt="arrow">
+                </div>
+            </div>
+            
+            <div class="step_four_right right">
+                <div class="step_four_check check">
+                    <input type="checkbox" name="" id="cd1">
+                    <label for="cd1"><img src="images/image 33.png" alt="interieur decor"></label>
+                    
+                </div>
+                <div class="step_four_check check">
+                    <input type="checkbox" name="" id="cd2">
+                    <label for="cd2"> <img src="images/image 33.png" alt="interieur decor"></label>
+
+                </div>
+                <div class="step_four_check check">
+                    <input type="checkbox" name="" id="cd3">
+                    <label for="cd3"> <img src="images/image 33.png" alt="interieur decor"></label>
+
+                </div>
+                <div class="step_four_check check">
+                    <input type="checkbox" name="" id="cd4">
+                    <label for="cd4"> <img src="images/image 33.png" alt="interieur decor"></label>
+
+                </div>
+                <div class="step_four_check check">
+                    <input type="checkbox" name="" id="cd5">
+                    <label for="cd5"> <img src="images/image 33.png" alt="interieur decor"></label>
+
+                </div>
+                <div class="step_four_check check">
+                    <input type="checkbox" name="" id="cd6">
+                    <label for="cd6"> <img src="images/image 33.png" alt="interieur decor"></label>
+
+                </div>
+                <div class="step_four_check check">
+                    <input type="checkbox" name="" id="cd7">
+                    <label for="cd7"> <img src="images/image 33.png" alt="interieur decor"></label>
+
+                </div>
+                <div class="step_four_check check">
+                    <input type="checkbox" name="" id="cd8">
+                    <label for="cd8"> <img src="images/image 33.png" alt="interieur decor"></label>
+
+                </div>
+                <div class="step_four_check check">
+                    <input type="checkbox" name="" id="cd9">
+                    <label for="cd9"> <img src="images/image 33.png" alt="interieur decor"></label>
+
+                </div>
+                <div class="step_four_check check">
+                    <input type="checkbox" name="" id="cd10">
+                    <label for="cd10"><img src="images/image 33.png" alt="interieur decor"></label>
+                </div>
+                <div class="step_four_check check">
+                    <input type="checkbox" name="" id="cd11">
+                    <label for="cd11"><img src="images/image 33.png" alt="interieur decor"></label>
+                </div>
+                <div class="step_four_check check">
+                    <input type="checkbox" name="" id="cd12">
+                    <label for="cd12"><img src="images/image 33.png" alt="interieur decor"></label>
+                </div>
+                <div class="step_four_check check">
+                    <input type="checkbox" name="" id="cd13">
+                    <label for="cd13"><img src="images/image 33.png" alt="interieur decor"></label>
+                </div>
+                <div class="step_four_check check">
+                    <input type="checkbox" name="" id="cd14">
+                    <label for="cd14"><img src="images/image 33.png" alt="interieur decor"></label>
+                </div>
+                <div class="step_four_check check">
+                    <input type="checkbox" name="" id="cd15">
+                    <label for="cd15"><img src="images/image 33.png" alt="interieur decor"></label>
+                </div>
+                <div style="width: 1px; height: 150px;"></div>
+            </div>
+
+            <div class="first_step_btn">
+                <button class="first_step_next" data-next onclick="nextPrev(1)" disabled>Suivant</button>
+            </div>
+
+
+        </div> -->
+        <!-- end step 4-->
+
+
+        <!--step 5-->
+        <div class="card step_five data-step">
+            <div class="step_five_left left">
+                <div class="first_step_title">
+                    <h1>Sélectionnez vos coups de coeur</h1>
+                    <p>Il est parfois compliqué de faire des choix alors choissiez en plusieurs.</p>
+                </div>
+                <div class="first_step_arrow">
+                    <img src="images/Arrow 2.png" alt="arrow">
+                </div>
+            </div>
+            
+            <div class="step_five_right right">
+                <div class="step_five_check check">
+                    <input type="checkbox" name="" id="cf1">
+                    <label for="cf1"><img src="images/image 33.png" alt="interieur decor"></label>
+                    
+                </div>
+                <div class="step_five_check check">
+                    <input type="checkbox" name="" id="cf2">
+                    <label for="cf2"> <img src="images/image 33.png" alt="interieur decor"></label>
+
+                </div>
+                <div class="step_five_check check">
+                    <input type="checkbox" name="" id="cf3">
+                    <label for="cf3"> <img src="images/image 33.png" alt="interieur decor"></label>
+
+                </div>
+                <div class="step_five_check check">
+                    <input type="checkbox" name="" id="cf4">
+                    <label for="cf4"> <img src="images/image 33.png" alt="interieur decor"></label>
+
+                </div>
+                <div class="step_five_check check">
+                    <input type="checkbox" name="" id="cf5">
+                    <label for="cf5"> <img src="images/image 33.png" alt="interieur decor"></label>
+
+                </div>
+                <div class="step_five_check check">
+                    <input type="checkbox" name="" id="cf6">
+                    <label for="cf6"> <img src="images/image 33.png" alt="interieur decor"></label>
+
+                </div>
+                <div class="step_five_check check">
+                    <input type="checkbox" name="" id="cf7">
+                    <label for="cf7"> <img src="images/image 33.png" alt="interieur decor"></label>
+
+                </div>
+                <div class="step_five_check check">
+                    <input type="checkbox" name="" id="cf8">
+                    <label for="cf8"> <img src="images/image 33.png" alt="interieur decor"></label>
+
+                </div>
+                <div class="step_five_check check">
+                    <input type="checkbox" name="" id="cf9">
+                    <label for="cf9"> <img src="images/image 33.png" alt="interieur decor"></label>
+
+                </div>
+                <div class="step_five_check check">
+                    <input type="checkbox" name="" id="cf10">
+                    <label for="cf10"><img src="images/image 33.png" alt="interieur decor"></label>
+                </div>
+                <div class="step_five_check check">
+                    <input type="checkbox" name="" id="cf11">
+                    <label for="cf11"><img src="images/image 33.png" alt="interieur decor"></label>
+                </div>
+                <div class="step_five_check check">
+                    <input type="checkbox" name="" id="cf12">
+                    <label for="cf12"><img src="images/image 33.png" alt="interieur decor"></label>
+                </div>
+                <div class="step_five_check check">
+                    <input type="checkbox" name="" id="cf13">
+                    <label for="cf13"><img src="images/image 33.png" alt="interieur decor"></label>
+                </div>
+                <div class="step_five_check check">
+                    <input type="checkbox" name="" id="cf14">
+                    <label for="cf14"><img src="images/image 33.png" alt="interieur decor"></label>
+                </div>
+                <div class="step_five_check check">
+                    <input type="checkbox" name="" id="cf15">
+                    <label for="cf15"><img src="images/image 33.png" alt="interieur decor"></label>
+                </div>
+                <div style="width: 1px; height: 150px;"></div>
+            </div>
+
+            <div class="first_step_btn">
+                <button class="first_step_next" data-next onclick="nextPrev(1)" disabled>Suivant</button>
+            </div>
+
+
+        </div>
+        <!-- end step 5-->
+
+        <!--step 6-->
+        <div class="card step_sex data-step">
+            <div class="step_sex_left">
+                <!-- <img src="images/image_30.png" alt="" > -->
+            </div>
+            <div class="step_sex_right">
+                <h2>Pour vous un dimanche brocante, c’est... </h2>
+                <div class="step_sex_check check">
+                    <input type="checkbox" name="" id="cs1">
+                    <label for="cs1"><p>Une belle idée</p></label>
+                </div>
+                <div class="step_sex_check check">
+                    <input type="checkbox" name="" id="cs2">
+                    <label for="cs2"><p>Une habitude</p></label>
+                </div>
+                <div class="step_sex_check check">
+                    <input type="checkbox" name="" id="cs3">
+                    <label for="cs3"><p>Un calvaire</p></label>
+                </div>
+                <div style="width: 1px; height: 150px;"></div>
+            </div>
+
+            <div class="step_sex_btn">
+                <button class="step_sex_next" data-next onclick="nextPrev(1)" disabled>Suivant</button>
+            </div>
+        </div>
+        <!-- end step 6-->
+
+        <!--step 7-->
+        <div class="card step_seven data-step">
+            <div class="step_seven_left">
+                <!-- <img src="images/image_30.png" alt="" > -->
+            </div>
+            <div class="step_seven_right">
+                <h2>Pour vous se sentir bien chez vous c’est </h2>
+                <div class="step_seven_check check">
+                    <input type="checkbox" name="" id="cv1">
+                    <label for="cv1"><p>Un intérieur où on peut recevoir </p></label>
+                </div>
+                <div class="step_seven_check check">
+                    <input type="checkbox" name="" id="cv2">
+                    <label for="cv2"><p>Un intérieur bien rangé et optimisé</p></label>
+                </div>
+                <div class="step_seven_check check">
+                    <input type="checkbox" name="" id="cv3">
+                    <label for="cv3"><p>Des bons moments en famille</p></label>
+                </div>
+                <div style="width: 1px; height: 150px;"></div>
+            </div>
+
+            <div class="step_seven_btn">
+                <button class="step_seven_next" data-next onclick="nextPrev(1)" disabled>Suivant</button>
+            </div>
+        </div>
+        <!-- end step 7-->
+        
+        
+        <!--step 8-->
+        <div class="card step_eight data-step">
+            <div class="step_eight_left left">
+                <div class="first_step_title">
+                    <h1>Chez vous, quelle pièce aurait besoin d’un petit coup de neuf ?</h1>
+                    <p>Vous pouvez en choisir plusieurs.</p>
+                </div>
+            </div>
+            
+            <div class="step_eight_right right">
+                <div class="step_eight_check check">
+                    <input type="checkbox" name="" id="cm1">
+                    <label for="cm1">
+                        <img src="images/Living-Room.svg">
+                        <p>Living Room</p>
+                    </label>
+                    
+                </div>
+                <div class="step_eight_check check">
+                    <input type="checkbox" name="" id="cm2">
+                    <label for="cm2"> 
+                        <img src="images/Dining-Room.svg">
+                        <p>Dining Room</p>
+                    </label>
+
+                </div>
+                <div class="step_eight_check check">
+                    <input type="checkbox" name="" id="cm3">
+                    <label for="cm3"> 
+                        <img src="images/Bedroom.svg">
+                        <p>Bedroom</p>
+                    </label>
+
+                </div>
+                <div class="step_eight_check check">
+                    <input type="checkbox" name="" id="cm4">
+                    <label for="cm4"> 
+                        <img src="images/Nursery.svg">
+                        <p>Nursery</p>
+                    </label>
+
+                </div>
+                <div class="step_eight_check check">
+                    <input type="checkbox" name="" id="cm5">
+                    <label for="cm5"> 
+                        <img src="images/Office.svg">
+                        <p>Office</p>
+                    </label>
+
+                </div>
+                <div class="step_eight_check check">
+                    <input type="checkbox" name="" id="cm6">
+                    <label for="cm6"> 
+                        <img src="images/Kitchen.svg">
+                        <p>Kitchen</p>
+                    </label>
+
+                </div>
+                <div class="step_eight_check check">
+                    <input type="checkbox" name="" id="cm7">
+                    <label for="cm7"> 
+                        <img src="images/Bathroom.svg">
+                        <p>Bathroom</p>
+                    </label>
+
+                </div>
+                <div class="step_eight_check check">
+                    <input type="checkbox" name="" id="cm8">
+                    <label for="cm8"> 
+                        <img src="images/Reading-Room.svg">
+                        <p>Reading Room</p>
+                    </label>
+
+                </div>
+                <div class="step_eight_check check">
+                    <input type="checkbox" name="" id="cm9">
+                    <label for="cm9"> 
+                        <img src="images/Outdoor_Space.svg">
+                        <p>Outdoor</p>
+                    </label>
+
+                </div>
+                <div class="step_eight_check check">
+                    <input type="checkbox" name="" id="cm10">
+                    <label for="cm10">
+                        <img src="images/Entryway.svg">
+                        <p>Entryway</p>
+                    </label>
+                </div>
+                <div class="step_eight_check check">
+                    <input type="checkbox" name="" id="cm11">
+                    <label for="cm11">
+                        <img src="images/Playroom.svg">
+                        <p>Playroom</p>
+                    </label>
+                </div>
+                <div class="step_eight_check check">
+                    <input type="checkbox" name="" id="cm12">
+                    <label for="cm12">
+                        <img src="images/Other.svg">
+                        <p>Other</p>
+                    </label>
+                </div>
+                <div class="step_eight_check check">
+                    <input type="checkbox" name="" id="cm13">
+                    <label for="cm13">
+                        <img src="images/Idk.svg">
+                        <p>Not Sure Yet</p>
+                    </label>
+                    <div style="width: 1px; height: 150px;"></div>
+                </div>
+            </div>
+
+            <div class="first_step_btn">
+                <button class="first_step_next" data-next onclick="nextPrev(1)" disabled>Suivant</button>
+            </div>
+
+
+        </div>
+        <!-- end step 8-->
+
+        <!--step 9-->
+        <div class="card step_nine data-step">
+            <div class="step_nine_left left">
+                <div class="step_nine_title">
+                    <h2>Nous y sommes presque !</h2>
+                    <p>Entrez votre email* pour découvrir votre diagnostique. </p>
+                </div>
+                <div class="step_nine_footer">
+                    <p>*Nous nous engageons à ce que vos données soient conservées en toute sécurité sur nos serveurs et ne soient pas communiquées à un parti tiers.</p>
+                </div>
+            </div>
+            <div class="step_nine_right right">
+                <input type="text" placeholder="Ecrivez votre email ici">
+            </div>
+            <div class="first_step_btn">
+                <button type="submit" class="first_step_next" id="submit">Mon diagnostic</button>
+            </div>
+        </div>
+       
+        <!--end step 9-->
+    </div>
+    <!--end form-->
+
+    </div>
+
+    <script>
+        let currentTab = 0; 
+        showTab(currentTab);
+
+        function showTab(n) {
+            var x = document.getElementsByClassName("data-step");
+            x[n].style.display = "flex";
+            var x, y;
+            x = document.getElementsByClassName("data-step");
+            y = x[currentTab].getElementsByTagName("input");
+            z = x[currentTab].getElementsByTagName("button");
+            for (i = 0; i < y.length; i++) {
+                y[i].addEventListener('change', function(e) {
+                    if(e.target.checked == true){
+                        z[0].style.opacity = "1";
+                        z[0].disabled = false;
+                    }else{
+                        for (t = 0; t < y.length; t++) {
+                            if(y[t].checked == true){
+                                z[0].style.opacity = "1";
+                                z[0].disabled = false;
+                                break
+                            }else{
+                                z[0].style.opacity = "0.4";
+                                z[0].disabled = true;
+                            }
+                        }
+                    }
+                })
+            }
+            progressStep();
+        }
+
+        function nextPrev(n) {
+            setTimeout(function () {
+                var x = document.getElementsByClassName("data-step");
+                x[currentTab].style.display = "none";
+                currentTab = currentTab + n;
+                showTab(currentTab);
+            }, 600);
+        }
+
+
+        function progressStep(){
+            let width = (100/9);
+            let currentWidth = width * (currentTab + 1)  ;
+            document.getElementById('progress_bar').style.display = "block";
+            document.getElementById('progress_bar').style.width = currentWidth + '%';
+        }
+
+       
+            
+            
+
+        
+    </script>
+</body>
+</html>
