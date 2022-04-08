@@ -122,7 +122,7 @@ button {
     width: 33.33%;
 }
 
-.form .card .right .check label img:hover{
+.form .card .right .first_step_check label img:hover, .form .card .right .step_five_check label img:hover{
     box-shadow:2px 6px 7px rgba(28,34,51,.2);
     outline:none;
 }
@@ -226,7 +226,7 @@ button {
 .step_two .step_two_right h2 {
     font-size: 60px;
     margin-bottom: 60px;
-    padding-right: 140px;
+    padding-right: 80px;
 }
 
 .step_two .step_two_right .step_two_check label p {
@@ -830,7 +830,7 @@ button {
     flex-direction: column;
     justify-content: space-between;
     margin-top: 213px;
-    margin-bottom: 200px;
+    margin-bottom: 125px;
     margin-left: 120px;
 }
 

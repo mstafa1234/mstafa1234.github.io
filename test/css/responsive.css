@@ -10,18 +10,26 @@
         justify-content: space-around;
     }
 
-    .form .card .right .check label, .form .card .right .check label img{
+    .form .card .first_step_right .check label, .form .card .first_step_right .check label img{
         width: 100%;
     }
 
-    .step_two .step_two_right, .step_three .step_three_right{
-        padding-left: 80px;
+    .step_two .step_two_right, .step_three .step_three_right,.form .step_sex .step_sex_right,.form .step_seven .step_seven_right{
+        padding-left: 20px;
     }
     
-    .step_two .step_two_right h2,  .step_three .step_three_right h2{
-        padding-right: 80px;
+    .step_two .step_two_right h2,  .step_three .step_three_right h2,.form .step_sex .step_sex_right h2,.form .step_seven .step_seven_right h2{
+        padding-right: 40px;
     }
 
+    
+    .form .card .step_nine_left{
+        margin-left: 80px;
+    }
+
+    .form .card .right .step_eight_check{
+        justify-content: center;
+    }
 
 }
 
@@ -39,11 +47,11 @@
         display: none;
     }
 
-    .step_two .step_two_left, .step_three .step_three_left{
+    .step_two .step_two_left, .step_three .step_three_left,.form .step_sex .step_sex_left,.form .step_seven .step_seven_left{
         display: none;
     }
 
-    .step_two .step_two_right, .step_three .step_three_right {
+    .step_two .step_two_right, .step_three .step_three_right,.form .step_sex .step_sex_right,.form .step_seven .step_seven_right {
         padding-left: 0px;
         display: flex;
         justify-content: center;
@@ -53,25 +61,29 @@
         padding-left: 30px;
     }
 
-    .step_two .step_two_right .step_two_check, .step_three .step_three_right .step_three_check {
+    .step_two .step_two_right .step_two_check, .step_three .step_three_right .step_three_check,.form .step_sex .step_sex_right .step_sex_check,.form .step_seven .step_seven_right .step_seven_check {
         display: flex;
         justify-content: center;
     }
 
-    .form .card .step_two .step_two_right h2, .form .card .step_three .step_three_right h2 {
+    .form .card .step_two .step_two_right h2, .form .card .step_three .step_three_right h2, .form .card .step_sex .step_sex_right h2, .form .card .step_seven .step_seven_right h2 {
         margin-bottom: 10px;
         padding-right: 0px;
         margin-top: 80px;
         padding-right: 30px;
     }
     
-    .step_two .step_two_right .step_two_check label p, .step_three .step_three_right .step_three_check label p {
+    .step_two .step_two_right .step_two_check label p, .step_three .step_three_right .step_three_check label p,.form .step_sex .step_sex_right .step_sex_check label p,.form .step_seven .step_seven_right .step_seven_check label p {
         padding-top: 10px;
         padding-left: 0px;
     }
 
 
+    .form .card .step_nine_left, .form .card .step_nine_right{
+        width: 100%;
+    }
 
+    
 }
 
 @media screen and (max-width: 890px) {
@@ -127,19 +139,36 @@
     }
     
     .step_two .step_two_right .step_two_check label p {
-        font-size: 14px;
+        /*font-size: 14px;*/
         padding-top: 10px;
         padding-left: 0px;
     }
 
-    .step_two .step_two_right .check label{
-        width: 282px;
-        height: 44px;
+    
+    .form .card .step_nine_left .step_nine_title h2 {
+        font-size: 45px;
+        margin-bottom: 30px;
     }
 
+
+    .form .card .step_nine_left .step_nine_footer p {
+        display: none;
+    }
     
-
-
+    .form .card .step_nine_left {
+        margin-top: 213px;
+        margin-bottom: 0px; 
+        margin-left: 0px;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    
+    .form .card .step_nine_right{
+        background: none;
+        display: block;
+        text-align: center;
+        height: 0;
+    }
 
 }
 
@@ -164,23 +193,30 @@
         width: 50%;
     }
 
-    .form .card .left .first_step_title h1, .step_two .step_two_right h2, .step_three .step_three_right h2  {
+    .form .card .left .first_step_title h1, .step_two .step_two_right h2, .step_three .step_three_right h2 ,.form .step_sex .step_sex_right h2,.form .step_seven .step_seven_right h2 {
         font-size: 35px;
         margin-bottom: 10px;
     }
     
-    .form .card .left .first_step_title p, .step_two .step_two_right .step_two_check label p, .step_three .step_three_right .step_three_check label p{
+    .form .card .left .first_step_title p, .step_two .step_two_right .step_two_check label p, .step_three .step_three_right .step_three_check label p,.form .step_sex .step_sex_right .step_sex_check label p,.form .step_seven .step_seven_right .step_seven_check label p{
         font-size: 14px;
         margin-bottom: 10px;
     }
 
-    .form .first_step_btn {
+    .form .first_step_btn,.form .step_two_btn,
+    .form .step_three_btn,
+    .form .step_sex_btn,
+    .form .step_seven_btn {
        display: flex;
        justify-content: center;
        align-items: center;
     }
     
-    .form .first_step_btn .first_step_next {
+    .form .first_step_btn .first_step_next,.form .step_two_btn .step_two_next,
+    .form .step_three_btn .step_three_next,
+    .form .step_sex_btn .step_sex_next,
+    .form .step_seven_btn .step_seven_next
+     {
         color: #000;
         background-color: #ef8949;
         border-radius: 56.5px;
@@ -190,9 +226,43 @@
         margin: 0;
     }
 
+    .step_two .step_two_right, .step_three .step_three_right, .form .step_sex .step_sex_right, .form .step_seven .step_seven_right{
+        margin-top: 60px;
+    }
 
 
+    .form .card .right .step_eight_check{
+        justify-content: center;
+    }
+    
+    .form .card .step_nine_left .step_nine_title h2 {
+        font-size: 35px;
+    }
+
+    .form .card .step_nine_right input{
+        font-size: 20px;
+        border-left: 0;
+        border-bottom: 1px solid #000;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .form .card .step_nine_right input::placeholder {
+        font-size: 20px;
+    }
+
+    .form .card .step_nine_left .step_nine_title p{
+        padding: 0 10px 0 10px;
+    }
     
 
+
 }
+
+
+
+
+
+
+
 
