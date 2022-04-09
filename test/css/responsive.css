@@ -196,6 +196,7 @@
     .form .card .left .first_step_title h1, .step_two .step_two_right h2, .step_three .step_three_right h2 ,.form .step_sex .step_sex_right h2,.form .step_seven .step_seven_right h2 {
         font-size: 35px;
         margin-bottom: 10px;
+        padding-right: 0;
     }
     
     .form .card .left .first_step_title p, .step_two .step_two_right .step_two_check label p, .step_three .step_three_right .step_three_check label p,.form .step_sex .step_sex_right .step_sex_check label p,.form .step_seven .step_seven_right .step_seven_check label p{
@@ -245,6 +246,7 @@
         border-bottom: 1px solid #000;
         text-align: center;
         padding-left: 0;
+        width: 285px;
     }
 
     .form .card .step_nine_right input::placeholder {

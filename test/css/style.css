@@ -509,6 +509,7 @@ button {
   
 .form .step_five .right .step_five_check img {
     border-radius: 103px !important;
+    width: 80%;
 } 
 
 /*step 5*/
