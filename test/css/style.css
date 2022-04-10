@@ -16,11 +16,14 @@
 h1, h2 {
     font-family: 'QueensCondensed', Arial, sans-serif;
     font-weight: normal;
+    font-size:48px;
+    line-Height :60px
 }
 
 p{
     font-family: 'SuisseIntl', Arial, sans-serif;
     font-weight: normal;
+    font-size:16px;
 }
 
 button {
@@ -56,7 +59,7 @@ button {
     display: none;
     top: 0;
     background-color: #CAC8F6;
-    height: 25px;
+    height: 10px;
     z-index: 1;
     transition: 0.4s linear;  
     transition-property: width, background-color;
@@ -73,9 +76,10 @@ button {
 }
 
 .form .card .left {
-    width: 41%;
+    width: 45%;
     display: flex;
     flex-direction: row-reverse;
+    height: 100vh;
 }
 
 .form .card .left .first_step_title {
@@ -87,13 +91,16 @@ button {
 
 
 .form .card .left .first_step_title h1 {
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom: 30px;
+    margin-left: 55px;
+    line-height: 60px;
 }
 
 .form .card .left .first_step_title p {
     font-size: 20px;
     padding-right: 105px;
+    margin-left: 55px;
 }
 
 .form .card .left .first_step_arrow{
@@ -110,16 +117,31 @@ button {
 }
 
 .form .card .right {
-    width: 59%;
-    display: flex;
+    width: 55%;
+    /* display: flex;
     flex-wrap: wrap;
     /*overflow: hidden;*/
-    height: 100vh;
-    padding-top: 15px;
+    /*height: 100vh;
+    padding-top: 15px; */
+    -webkit-column-count: 3;
+  -moz-column-count:3;
+  column-count: 3;
+  -webkit-column-gap: 1em;
+  -moz-column-gap: 1em;
+  column-gap: 1em;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    padding: 83px 83px 0 0;
 }
 
 .form .card .right .check {
-    width: 33.33%;
+    display: inline-block;
+    width: 100%;
+    transition: 1s ease all;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 .form .card .right .first_step_check label img:hover, .form .card .right .step_five_check label img:hover{
@@ -130,6 +152,7 @@ button {
 
 .form .card .right .check label img {
     border-radius: 44px;
+    width: 100%;
 }
 
 
@@ -185,20 +208,22 @@ button {
     position: fixed;
     bottom: 0;
     right: 0;
-    height: 15.78%;
+    height: 100px;
     background-color: #fff;
     opacity: 85%;
 }
 
 .form .first_step_btn .first_step_next {
     color: #000;
-    background-color: #ef8949;
+    background-color: #e59400;
     border-radius: 56.5px;
-    padding: 25px 90px;
+    padding: 15px 50px;
     border: none;
     margin-top: 25px;
-    margin-right: 25px;
+    margin-right: 50px;
     float: right;
+    font-size: 20px;
+
 }
 
 /*step 1*/
@@ -224,15 +249,14 @@ button {
 }
 
 .step_two .step_two_right h2 {
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom: 60px;
-    padding-right: 80px;
+    line-height: 60px;
 }
 
+
 .step_two .step_two_right .step_two_check label p {
-    font-size: 22px;
-    padding-top: 13px;
-    padding-left: 23px;
+    font-size: 18px;
 }
 
 .step_two .step_two_right .check input[type="radio"][id^="cc"] {
@@ -248,6 +272,10 @@ button {
     height: 58px;
     border-radius: 10px;
     margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
   
 .step_two .step_two_right .check label:before {
@@ -283,7 +311,7 @@ button {
   
 .step_two .step_two_right .check :checked + label p {
     transform: scale(0.9);
-    z-index: -1;
+    z-index: 1;
 }
 
 .form .step_two_btn {
@@ -291,20 +319,21 @@ button {
     position: fixed;
     bottom: 0;
     right: 0;
-    height: 15.78%;
+    height: 100px;
     background-color: #fff;
     opacity: 85%;
 }
 
 .form .step_two_btn .step_two_next {
     color: #000;
-    background-color: #ef8949;
+    background-color: #e59400;
     border-radius: 56.5px;
-    padding: 25px 90px;
+    padding: 15px 50px;
     border: none;
     margin-top: 25px;
     margin-right: 25px;
     float: right;
+    font-size: 20px;
 }
 
 /*step 2*/
@@ -313,7 +342,7 @@ button {
 /*step 3*/
 
 
-.step_three .step_three_left{
+.step_three .step_three_left, .step_three2 .step_three2_left{
     width: 47%;
     background-image: url("../images/image_30.png");
     height: 100vh;
@@ -322,7 +351,7 @@ button {
 }
 
 
-.step_three .step_three_right{
+.step_three .step_three_right, .step_three2 .step_three2_right{
     width: 53%;
     display: flex;
     flex-direction: column;
@@ -331,35 +360,37 @@ button {
 }
 
 
-.step_three .step_three_right h2 {
-    font-size: 60px;
+.step_three .step_three_right h2, .step_three2 .step_three2_right h2 {
+    font-size: 50px;
+    line-height: 60px;
     margin-bottom: 60px;
     padding-right: 140px;
 }
 
-.step_three .step_three_right .step_three_check label p {
-    font-size: 22px;
-    padding-top: 13px;
-    padding-left: 23px;
+.step_three .step_three_right .step_three_check label p, .step_three2 .step_three2_right .step_three2_check label p {
+    font-size: 18px;
 }
 
 
-.step_three .step_three_right .check input[type="checkbox"][id^="ce"] {
+.step_three .step_three_right .check input[type="checkbox"][id^="ce"], .step_three2 .step_three2_right .check input[type="checkbox"][id^="cee"] {
     display: none;
   }
   
-.step_three .step_three_right .check label {
+.step_three .step_three_right .check label, .step_three2 .step_three2_right .check label {
     display: block;
     position: relative;
     cursor: pointer;
     background-color: #CAC8F6;
     width: 500px;
-    height: 58px;
+    height: 48px;
     border-radius: 10px;
     margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
   
-.step_three .step_three_right .check label:before {
+.step_three .step_three_right .check label:before, .step_three2 .step_three2_right .check label:before {
     background-color: white;
     color: white;
     content: " ";
@@ -378,42 +409,43 @@ button {
     z-index: 1;
 }
   
-.step_three .step_three_right .check label p {
+.step_three .step_three_right .check label p, .step_three2 .step_three2_right .check label p {
     transition-duration: 0.2s;
     transform-origin: 50% 50%;
 }
   
-.step_three .step_three_right .check :checked + label:before {
+.step_three .step_three_right .check :checked + label:before, .step_three2 .step_three2_right .check :checked + label:before {
     content: "✓";
     background-color: #F9EFDB;
     color: #352C26;
     transform: scale(1);
 }
   
-.step_three .step_three_right .check :checked + label p {
+.step_three .step_three_right .check :checked + label p, .step_three2 .step_three2_right .check :checked + label p {
     transform: scale(0.9);
-    z-index: -1;
+    z-index: 1;
 }
 
-.form .step_three_btn {
+.form .step_three_btn, .form .step_three2_btn  {
     width: 100vw;
     position: fixed;
     bottom: 0;
     right: 0;
-    height: 15.78%;
+    height: 100px;
     background-color: #fff;
     opacity: 85%;
 }
 
-.form .step_three_btn .step_three_next {
+.form .step_three_btn .step_three_next, .form .step_three2_btn .step_three2_next {
     color: #000;
-    background-color: #ef8949;
+    background-color: #e59400;
     border-radius: 56.5px;
-    padding: 25px 90px;
+    padding: 15px 50px;
     border: none;
     margin-top: 25px;
     margin-right: 25px;
     float: right;
+    font-size: 20px;
 }
 
 
@@ -468,6 +500,13 @@ button {
 
 /*step 5*/
 
+.form .step_five .left{
+    width: 50%;
+} 
+
+.form .step_five .right {
+    width:50%;
+}
 
 .form .step_five .right .check input[type="checkbox"][id^="cf"] {
     display: none;
@@ -476,11 +515,17 @@ button {
   .form .step_five .right .step_five_check label {
     border-radius: 44px !important;
     width: 95%;
-    background-color: #F4E6E6;
+    background-color: #FAF3E9;
     text-align: center;
     padding: 50px 0px 44px 0px;
     margin-bottom: 15px;
 } 
+
+.form .step_five .right .step_five_check label h1{
+    line-height: 60px;
+    font-size: 50px;
+    margin-left: 50px;
+}
 
 .form .step_five .step_five_right .step_five_check label:before {
     background-color: white;
@@ -535,19 +580,19 @@ button {
 }
 
 .form .step_sex .step_sex_right h2{
-    font-size: 60px;
+    font-size: 50px;
+    line-height: 60px;
     margin-bottom: 60px;
     padding-right: 140px;
 }
 
 .form .step_sex .step_sex_right label p {
-    font-size: 22px;
-    padding-top: 13px;
+    font-size: 18px;
     padding-left: 23px;
 }
 
 
-.form .step_sex .step_sex_right .check input[type="checkbox"][id^="cs"] {
+.form .step_sex .step_sex_right .check input[type="radio"][id^="cs"] {
     display: none;
   }
   
@@ -560,6 +605,9 @@ button {
     height: 58px;
     border-radius: 10px;
     margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
   
 .step_sex .step_sex_right .check label:before {
@@ -595,7 +643,7 @@ button {
   
 .step_sex .step_sex_right .check :checked + label p {
     transform: scale(0.9);
-    z-index: -1;
+    z-index: 1;
 }
 
 .form .step_sex_btn {
@@ -603,20 +651,21 @@ button {
     position: fixed;
     bottom: 0;
     right: 0;
-    height: 15.78%;
+    height: 100px;
     background-color: #fff;
     opacity: 85%;
 }
 
 .form .step_sex_btn .step_sex_next {
     color: #000;
-    background-color: #ef8949;
+    background-color: #e59400;
     border-radius: 56.5px;
-    padding: 25px 90px;
+    padding: 15px 50px;
     border: none;
     margin-top: 25px;
     margin-right: 25px;
     float: right;
+    font-size: 20px;
 }
 
 /*step sex*/
@@ -641,17 +690,17 @@ button {
 }
 
 .step_seven .step_seven_right h2 {
-    font-size: 60px;
+    font-size: 50px;
+    line-height: 60px;
     margin-bottom: 60px;
 }
 
 .step_seven .step_seven_right label p{
-    font-size: 22px;
-    padding-top: 13px;
+    font-size: 18px;
     padding-left: 23px;
 }
 
-.step_seven .step_seven_right .check input[type="checkbox"][id^="cv"] {
+.step_seven .step_seven_right .check input[type="radio"][id^="cv"] {
     display: none;
   }
   
@@ -664,6 +713,9 @@ button {
     height: 58px;
     border-radius: 10px;
     margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
   
 .step_seven .step_seven_right .check label:before {
@@ -699,7 +751,7 @@ button {
   
 .step_seven .step_seven_right .check :checked + label p {
     transform: scale(0.9);
-    z-index: -1;
+    z-index: 1;
 }
 
 .form .step_seven_btn {
@@ -707,20 +759,21 @@ button {
     position: fixed;
     bottom: 0;
     right: 0;
-    height: 15.78%;
+    height: 100px;
     background-color: #fff;
     opacity: 85%;
 }
 
 .form .step_seven_btn .step_seven_next {
     color: #000;
-    background-color: #ef8949;
+    background-color: #e59400;
     border-radius: 56.5px;
-    padding: 25px 90px;
+    padding: 15px 50px;
     border: none;
     margin-top: 25px;
     margin-right: 25px;
     float: right;
+    font-size: 20px;
 }
 
 
@@ -728,7 +781,7 @@ button {
 
 
 /*step eight*/
-.form .step_eight{
+/* .form .step_eight{
     justify-content: space-between !important;
 }
 
@@ -739,6 +792,10 @@ button {
     height: 708px;
     margin-bottom: 59px;
     margin-right: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0;
+    column-count: 0;
 }
 
 .form .card .right .step_eight_check input[type="checkbox"][id^="cm"] {
@@ -820,7 +877,7 @@ button {
 .form .card .right .step_eight_check :checked + label {
     background-color: #F3DFB7;
     z-index: 1;
-}
+} */
 
 /*step eight*/
 
@@ -829,28 +886,29 @@ button {
 .form .card .step_nine_left {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-top: 213px;
-    margin-bottom: 125px;
-    margin-left: 120px;
+    justify-content: center;
+    margin-top: -100px;
+    align-items: center;
+    height: auto;
 }
 
 .form .card .step_nine_left .step_nine_title h2{
-    font-size: 70px;
+    font-size: 50px;
+    line-height: 60px;
 }
 
 .form .card .step_nine_left .step_nine_title p{
-    font-size: 20px;
+    font-size: 18px;
 }
 
-.form .card .step_nine_left .step_nine_footer p{
-    font-size: 15px;
-}
 
 .form .card .step_nine_right {
     background-color: #FAF3E9;
+    display: flex;
     justify-content: center;
     align-items: center;
+    column-gap: 0;
+    height: 100vh;
 }
 
 .form .card .step_nine_right input{
@@ -858,15 +916,14 @@ button {
     width: 460px;
     background: transparent;
     border: none;
-    border-left: 1px solid #000;
-    padding-left: 30px;
+    padding-left: 140px;
     margin-top: -120px;
-    font-size: 50px;
+    font-size: 25px;
     outline: none;
 }
 
 .form .card .step_nine_right input::placeholder {
-    font-size: 50px;
+    font-size: 25px;
 }
 
 .form .card .first_step_btn #submit {
