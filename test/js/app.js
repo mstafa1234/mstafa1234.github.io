@@ -8,6 +8,9 @@ function showTab(n) {
   x = document.getElementsByClassName("data-step");
   y = x[currentTab].getElementsByTagName("input");
   z = x[currentTab].getElementsByTagName("button");
+
+  location.href = "#step" + currentTab;
+
   for (i = 0; i < y.length; i++) {
     y[i].addEventListener("change", function (e) {
       if (e.target.checked == true) {
@@ -27,6 +30,7 @@ function showTab(n) {
       }
     });
   }
+
   progressStep();
 }
 
@@ -50,19 +54,31 @@ function progressStep() {
   }
 }
 
-// if(performance.navigation.type == 2)
-// {
-//     preventDefault();
-//     var x = document.getElementsByClassName("data-step");
-//         x[currentTab].style.display = "none";
-//         if(currentTab !== 0){
-//             showTab(currentTab - 1)
-//         }else{
-//             showTab(currentTab)
-//         }
-// }
-
-window.history.pushState(null, null, window.location.href);
-window.onpopstate = function () {
-  console.log("ggg");
-};
+setInterval(function () {
+  var x = document.getElementsByClassName("data-step");
+  y = x[currentTab].getElementsByTagName("input");
+  z = x[currentTab].getElementsByTagName("button");
+  var loc = String(location.href);
+  let position = loc.search("step" + currentTab);
+  if (currentTab >= 0) {
+    if (position == -1) {
+      currentTab -= 1;
+    } else {
+      x[currentTab].style.display = "flex";
+      if (typeof x[currentTab + 1] !== "undefined") {
+        x[currentTab + 1].style.display = "none";
+      }
+      for (t = 0; t < y.length; t++) {
+        if (y[t].checked == true) {
+          z[0].style.opacity = "1";
+          z[0].disabled = false;
+          break;
+        } else {
+          z[0].style.opacity = "0.4";
+          z[0].disabled = true;
+        }
+      }
+    }
+  }
+  console.log(position, loc);
+}, 600);

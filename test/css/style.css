@@ -1,784 +1,792 @@
 @font-face {
-    font-family: "QueensCondensed";
-    src: url("../fonts/QueensCondensed_W-Regular.woff2") format("woff2"),
+  font-family: "QueensCondensed";
+  src: url("../fonts/QueensCondensed_W-Regular.woff2") format("woff2"),
     url("../fonts/QueensCondensed_W-Regular.woff") format("woff");
 }
 
 @font-face {
-    font-family: "SuisseIntl";
-    src: url("../fonts/SuisseIntl-Regular.ttf") format("truetype"),
+  font-family: "SuisseIntl";
+  src: url("../fonts/SuisseIntl-Regular.ttf") format("truetype"),
     url("../fonts/SuisseIntl-Medium.ttf") format("truetype"),
     url("../fonts/SuisseIntl-Medium.otf") format("opentype"),
     url("../fonts/SuisseIntl-Regular.otf") format("opentype");
-    
 }
 
-h1, h2 {
-    font-family: 'QueensCondensed', Arial, sans-serif;
-    font-weight: normal;
-    font-size:48px;
-    line-Height :60px
+h1,
+h2 {
+  font-family: "QueensCondensed", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 60px;
 }
 
-p{
-    font-family: 'SuisseIntl', Arial, sans-serif;
-    font-weight: normal;
-    font-size:16px;
+p {
+  font-family: "SuisseIntl", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
 }
 
 button {
-    font-family: 'SuisseIntl', Arial, sans-serif;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 25px;
-    opacity: 0.4;
+  font-family: "SuisseIntl", Arial, sans-serif;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 25px;
+  opacity: 0.4;
 }
 
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 .container {
-    max-width: 1512px;
-    margin: 0 auto;
+  max-width: 1512px;
+  margin: 0 auto;
 }
-
-
 
 .form {
-    height: 100vh;
+  height: 100vh;
 }
-
 
 /*start progress*/
 #progress_bar {
-    width: 12.5%;
-    position: fixed;
-    display: none;
-    top: 0;
-    background-color: #CAC8F6;
-    height: 10px;
-    z-index: 1;
-    transition: 0.4s linear;  
-    transition-property: width, background-color;
+  width: 12.5%;
+  position: fixed;
+  display: none;
+  top: 0;
+  background-color: #cac8f6;
+  height: 10px;
+  z-index: 1;
+  transition: 0.4s linear;
+  transition-property: width, background-color;
 }
-
-
 
 /*end progress*/
 
 /*step 1*/
 
-.form .card{
-    display: flex;
+.form .card {
+  display: flex;
 }
 
 .form .card .left {
-    width: 45%;
-    display: flex;
-    flex-direction: row-reverse;
-    height: 100vh;
+  width: 45%;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100vh;
 }
 
 .form .card .left .first_step_title {
-    margin: 0 auto;
-    align-self: center;
-    padding: 0 42px 0 42px;
-    position: fixed;
+  margin: 0 auto;
+  align-self: center;
+  padding: 0 42px 0 42px;
+  position: fixed;
 }
 
-
 .form .card .left .first_step_title h1 {
-    font-size: 50px;
-    margin-bottom: 30px;
-    margin-left: 55px;
-    line-height: 60px;
+  font-size: 50px;
+  margin-bottom: 30px;
+  margin-left: 55px;
+  line-height: 60px;
 }
 
 .form .card .left .first_step_title p {
-    font-size: 20px;
-    padding-right: 105px;
-    margin-left: 55px;
+  font-size: 20px;
+  padding-right: 105px;
+  margin-left: 55px;
 }
 
-.form .card .left .first_step_arrow{
-    padding: 10px;
-    animation: bounce 0.6s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    position: fixed;
+.form .card .left .first_step_arrow {
+  padding: 10px;
+  animation: bounce 0.6s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  position: fixed;
 }
 
 @keyframes bounce {
-    from { transform: translate3d(0, 0, 0);     }
-    to   { transform: translate3d(0, 10px, 0); }
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 10px, 0);
+  }
 }
 
 .form .card .right {
-    width: 55%;
-    /* display: flex;
+  width: 55%;
+  /* display: flex;
     flex-wrap: wrap;
     /*overflow: hidden;*/
-    /*height: 100vh;
+  /*height: 100vh;
     padding-top: 15px; */
-    -webkit-column-count: 3;
-  -moz-column-count:3;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
   column-count: 3;
   -webkit-column-gap: 1em;
   -moz-column-gap: 1em;
   column-gap: 1em;
-    -moz-column-gap: 1.5em;
-    -webkit-column-gap: 1.5em;
-    column-gap: 1.5em;
-    padding: 83px 83px 0 0;
+  -moz-column-gap: 1.5em;
+  -webkit-column-gap: 1.5em;
+  column-gap: 1.5em;
+  padding: 83px 83px 0 0;
 }
 
 .form .card .right .check {
-    display: inline-block;
-    width: 100%;
-    transition: 1s ease all;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  transition: 1s ease all;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
-.form .card .right .first_step_check label img:hover, .form .card .right .step_five_check label img:hover{
-    box-shadow:2px 6px 7px rgba(28,34,51,.2);
-    outline:none;
+.form .card .right .first_step_check label img:hover,
+.form .card .right .step_five_check label:hover {
+  box-shadow: 2px 6px 7px rgba(28, 34, 51, 0.2);
+  outline: none;
 }
-
 
 .form .card .right .check label img {
-    border-radius: 44px;
-    width: 100%;
+  border-radius: 44px;
+  width: 100%;
 }
-
-
-
 
 .form .card .right .check input[type="checkbox"][id^="cb"] {
-    display: none;
-  }
-  
+  display: none;
+}
+
 .form .card .right .check label {
-    display: block;
-    position: relative;
-    cursor: pointer;
+  display: block;
+  position: relative;
+  cursor: pointer;
 }
-  
+
 .form .card .right .check label:before {
-    background-color: white;
-    color: white;
-    content: " ";
-    display: block;
-    border-radius: 50%;
-    border: 1px solid grey;
-    position: absolute;
-    top: 34px;
-    right: 64px;
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    line-height: 28px;
-    transition-duration: 0.4s;
-    transform: scale(0);
-    z-index: 1;
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: 34px;
+  right: 64px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+  z-index: 1;
 }
-  
+
 .form .card .right .check label img {
-    transition-duration: 0.2s;
-    transform-origin: 50% 50%;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
 }
-  
+
 .form .card .right .check :checked + label:before {
-    content: "✓";
-    background-color: #34455F;
-    transform: scale(1);
+  content: "✓";
+  background-color: #34455f;
+  transform: scale(1);
 }
-  
+
 .form .card .right .check :checked + label img {
-    transform: scale(0.9);
-    z-index: -1;
+  transform: scale(0.9);
+  z-index: 0;
 }
 
 .form .first_step_btn {
-    width: 100vw;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    height: 100px;
-    background-color: #fff;
-    opacity: 85%;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 100px;
+  background-color: #fff;
+  opacity: 85%;
 }
 
 .form .first_step_btn .first_step_next {
-    color: #000;
-    background-color: #e59400;
-    border-radius: 56.5px;
-    padding: 15px 50px;
-    border: none;
-    margin-top: 25px;
-    margin-right: 50px;
-    float: right;
-    font-size: 20px;
-
+  color: #000;
+  background-color: #e59400;
+  border-radius: 56.5px;
+  padding: 15px 50px;
+  border: none;
+  margin-top: 25px;
+  margin-right: 50px;
+  float: right;
+  font-size: 20px;
 }
 
 /*step 1*/
 
 /*step 2*/
 
-
-.step_two .step_two_left{
-    width: 47%;
-    background-image: url("../images/image_30.png");
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
+.step_two .step_two_left {
+  width: 47%;
+  background-image: url("../images/SLIDE 2/SLIDE2.jpeg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-
-.step_two .step_two_right{
-    width: 53%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 150px;
+.step_two .step_two_right {
+  width: 53%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 150px;
 }
 
 .step_two .step_two_right h2 {
-    font-size: 50px;
-    margin-bottom: 60px;
-    line-height: 60px;
+  font-size: 50px;
+  margin-bottom: 60px;
+  line-height: 60px;
 }
 
-
 .step_two .step_two_right .step_two_check label p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .step_two .step_two_right .check input[type="radio"][id^="cc"] {
-    display: none;
-  }
-  
-.step_two .step_two_right .check label {
-    display: block;
-    position: relative;
-    cursor: pointer;
-    background-color: #CAC8F6;
-    width: 500px;
-    height: 58px;
-    border-radius: 10px;
-    margin-bottom: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: none;
+}
 
+.step_two .step_two_right .check label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  background-color: #cac8f6;
+  width: 500px;
+  height: 58px;
+  border-radius: 10px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-  
+
 .step_two .step_two_right .check label:before {
-    background-color: white;
-    color: white;
-    content: " ";
-    display: block;
-    border-radius: 50%;
-    border: 1px solid grey;
-    position: absolute;
-    top: -13px;
-    right: 0px;
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    line-height: 28px;
-    transition-duration: 0.4s;
-    transform: scale(0);
-    z-index: 1;
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: -13px;
+  right: 0px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+  z-index: 1;
 }
-  
+
 .step_two .step_two_right .check label p {
-    transition-duration: 0.2s;
-    transform-origin: 50% 50%;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
 }
-  
+
 .step_two .step_two_right .check :checked + label:before {
-    content: "✓";
-    background-color: #F9EFDB;
-    color: #352C26;
-    transform: scale(1);
+  content: "✓";
+  background-color: #f9efdb;
+  color: #352c26;
+  transform: scale(1);
 }
-  
+
 .step_two .step_two_right .check :checked + label p {
-    transform: scale(0.9);
-    z-index: 1;
+  transform: scale(0.9);
+  z-index: 1;
 }
 
 .form .step_two_btn {
-    width: 100vw;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    height: 100px;
-    background-color: #fff;
-    opacity: 85%;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 100px;
+  background-color: #fff;
+  opacity: 85%;
 }
 
 .form .step_two_btn .step_two_next {
-    color: #000;
-    background-color: #e59400;
-    border-radius: 56.5px;
-    padding: 15px 50px;
-    border: none;
-    margin-top: 25px;
-    margin-right: 25px;
-    float: right;
-    font-size: 20px;
+  color: #000;
+  background-color: #e59400;
+  border-radius: 56.5px;
+  padding: 15px 50px;
+  border: none;
+  margin-top: 25px;
+  margin-right: 25px;
+  float: right;
+  font-size: 20px;
 }
 
 /*step 2*/
 
-
 /*step 3*/
 
-
-.step_three .step_three_left, .step_three2 .step_three2_left{
-    width: 47%;
-    background-image: url("../images/image_30.png");
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
+.step_three .step_three_left {
+  width: 47%;
+  background-image: url("../images/SLIDE 3/slide3insidy.jpeg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-
-.step_three .step_three_right, .step_three2 .step_three2_right{
-    width: 53%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 150px;
+.step_three2 .step_three2_left {
+  width: 47%;
+  background-image: url("../images/SLIDE4/INSIDYSLIDE4.jpeg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-
-.step_three .step_three_right h2, .step_three2 .step_three2_right h2 {
-    font-size: 50px;
-    line-height: 60px;
-    margin-bottom: 60px;
-    padding-right: 140px;
+.step_three .step_three_right,
+.step_three2 .step_three2_right {
+  width: 53%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 150px;
 }
 
-.step_three .step_three_right .step_three_check label p, .step_three2 .step_three2_right .step_three2_check label p {
-    font-size: 18px;
+.step_three .step_three_right h2,
+.step_three2 .step_three2_right h2 {
+  font-size: 50px;
+  line-height: 60px;
+  margin-bottom: 60px;
+  padding-right: 140px;
 }
 
-
-.step_three .step_three_right .check input[type="checkbox"][id^="ce"], .step_three2 .step_three2_right .check input[type="checkbox"][id^="cee"] {
-    display: none;
-  }
-  
-.step_three .step_three_right .check label, .step_three2 .step_three2_right .check label {
-    display: block;
-    position: relative;
-    cursor: pointer;
-    background-color: #CAC8F6;
-    width: 500px;
-    height: 48px;
-    border-radius: 10px;
-    margin-bottom: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-  
-.step_three .step_three_right .check label:before, .step_three2 .step_three2_right .check label:before {
-    background-color: white;
-    color: white;
-    content: " ";
-    display: block;
-    border-radius: 50%;
-    border: 1px solid grey;
-    position: absolute;
-    top: -13px;
-    right: 0px;
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    line-height: 28px;
-    transition-duration: 0.4s;
-    transform: scale(0);
-    z-index: 1;
-}
-  
-.step_three .step_three_right .check label p, .step_three2 .step_three2_right .check label p {
-    transition-duration: 0.2s;
-    transform-origin: 50% 50%;
-}
-  
-.step_three .step_three_right .check :checked + label:before, .step_three2 .step_three2_right .check :checked + label:before {
-    content: "✓";
-    background-color: #F9EFDB;
-    color: #352C26;
-    transform: scale(1);
-}
-  
-.step_three .step_three_right .check :checked + label p, .step_three2 .step_three2_right .check :checked + label p {
-    transform: scale(0.9);
-    z-index: 1;
+.step_three .step_three_right .step_three_check label p,
+.step_three2 .step_three2_right .step_three2_check label p {
+  font-size: 18px;
 }
 
-.form .step_three_btn, .form .step_three2_btn  {
-    width: 100vw;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    height: 100px;
-    background-color: #fff;
-    opacity: 85%;
+.step_three .step_three_right .check input[type="checkbox"][id^="ce"],
+.step_three2 .step_three2_right .check input[type="checkbox"][id^="cee"] {
+  display: none;
 }
 
-.form .step_three_btn .step_three_next, .form .step_three2_btn .step_three2_next {
-    color: #000;
-    background-color: #e59400;
-    border-radius: 56.5px;
-    padding: 15px 50px;
-    border: none;
-    margin-top: 25px;
-    margin-right: 25px;
-    float: right;
-    font-size: 20px;
+.step_three .step_three_right .check label,
+.step_three2 .step_three2_right .check label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  background-color: #cac8f6;
+  width: 500px;
+  height: 48px;
+  border-radius: 10px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.step_three .step_three_right .check label:before,
+.step_three2 .step_three2_right .check label:before {
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: -13px;
+  right: 0px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+  z-index: 1;
+}
+
+.step_three .step_three_right .check label p,
+.step_three2 .step_three2_right .check label p {
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+}
+
+.step_three .step_three_right .check :checked + label:before,
+.step_three2 .step_three2_right .check :checked + label:before {
+  content: "✓";
+  background-color: #f9efdb;
+  color: #352c26;
+  transform: scale(1);
+}
+
+.step_three .step_three_right .check :checked + label p,
+.step_three2 .step_three2_right .check :checked + label p {
+  transform: scale(0.9);
+  z-index: 1;
+}
+
+.form .step_three_btn,
+.form .step_three2_btn {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 100px;
+  background-color: #fff;
+  opacity: 85%;
+}
+
+.form .step_three_btn .step_three_next,
+.form .step_three2_btn .step_three2_next {
+  color: #000;
+  background-color: #e59400;
+  border-radius: 56.5px;
+  padding: 15px 50px;
+  border: none;
+  margin-top: 25px;
+  margin-right: 25px;
+  float: right;
+  font-size: 20px;
+}
 
 /*step 3*/
 
 /*step 4*/
 
-
 .form .step_four .right .check input[type="checkbox"][id^="cd"] {
-    display: none;
-  }
+  display: none;
+}
 
 .form .step_four .right .step_four_check label {
-    border-radius: 44px !important;
-    width: 95%;
-    background-color: #F4E6E6;
-    text-align: center;
-    padding: 50px 0px 44px 0px;
-    margin-bottom: 15px;
-} 
+  border-radius: 44px !important;
+  width: 95%;
+  background-color: #f4e6e6;
+  text-align: center;
+  padding: 50px 0px 44px 0px;
+  margin-bottom: 15px;
+}
 
 .form .step_four .step_four_right .step_four_check label:before {
-    background-color: white;
-    color: white;
-    content: " ";
-    display: block;
-    border-radius: 50%;
-    border: 1px solid grey;
-    position: absolute;
-    top: 80px;
-    right: 68px;
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    line-height: 28px;
-    transition-duration: 0.4s;
-    transform: scale(0);
-    z-index: 1;
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: 80px;
+  right: 68px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+  z-index: 1;
 }
 
 .form .step_four .step_four_right .step_four_check :checked + label:before {
-    content: "✓";
-    background-color: #34455F;
-    transform: scale(2);
+  content: "✓";
+  background-color: #34455f;
+  transform: scale(2);
 }
-  
+
 .form .step_four .right .step_four_check img {
-    border-radius: 103px !important;
-} 
+  border-radius: 103px !important;
+}
 
 /*step 4*/
 
 /*step 5*/
 
-.form .step_five .left{
-    width: 50%;
-} 
+.form .step_five .left {
+  width: 50%;
+}
 
 .form .step_five .right {
-    width:50%;
+  width: 50%;
 }
 
 .form .step_five .right .check input[type="checkbox"][id^="cf"] {
-    display: none;
-  }
+  display: none;
+}
 
-  .form .step_five .right .step_five_check label {
-    border-radius: 44px !important;
-    width: 95%;
-    background-color: #FAF3E9;
-    text-align: center;
-    padding: 50px 0px 44px 0px;
-    margin-bottom: 15px;
-} 
+.form .step_five .right .step_five_check label {
+  border-radius: 44px !important;
+  width: 100%;
+  background-color: #faf3e9;
+  text-align: center;
+  padding: 16px 0px 16px 0px;
+  margin-bottom: 15px;
+}
 
-.form .step_five .right .step_five_check label h1{
-    line-height: 60px;
-    font-size: 50px;
-    margin-left: 50px;
+.form .step_five .right .step_five_check:nth-child(1) label,
+.form .step_five .right .step_five_check:nth-child(19) label {
+  height: 330px;
+  /* display: flex;
+    justify-content: center; */
+}
+
+.form .step_five .right .step_five_check label h1 {
+  line-height: 60px;
+  font-size: 50px;
+  margin-left: 50px;
 }
 
 .form .step_five .step_five_right .step_five_check label:before {
-    background-color: white;
-    color: white;
-    content: " ";
-    display: block;
-    border-radius: 50%;
-    border: 1px solid grey;
-    position: absolute;
-    top: 80px;
-    right: 68px;
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    line-height: 28px;
-    transition-duration: 0.4s;
-    transform: scale(0);
-    z-index: 1;
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: 80px;
+  right: 68px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+  z-index: 1;
 }
 
 .form .step_five .step_five_right .step_five_check :checked + label:before {
-    content: "✓";
-    background-color: #34455F;
-    transform: scale(2);
+  content: "✓";
+  background-color: #34455f;
+  transform: scale(2);
 }
-  
+
 .form .step_five .right .step_five_check img {
-    border-radius: 103px !important;
-    width: 80%;
-} 
+  border-radius: 103px !important;
+  width: 80% !important;
+}
+
+.form .step_five .right .step_five_check:nth-child(1) img,
+.form .step_five .right .step_five_check:nth-child(19) img {
+  margin-top: 40px;
+}
 
 /*step 5*/
 
 /*step 6*/
 
-
-.form .step_sex .step_sex_left{
-    width: 47%;
-    background-image: url("../images/image 16.png");
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
+.form .step_sex .step_sex_left {
+  width: 47%;
+  background-image: url("../images/image 16.png");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-
-.form .step_sex .step_sex_right{
-    width: 53%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 150px;
+.form .step_sex .step_sex_right {
+  width: 53%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 150px;
 }
 
-.form .step_sex .step_sex_right h2{
-    font-size: 50px;
-    line-height: 60px;
-    margin-bottom: 60px;
-    padding-right: 140px;
+.form .step_sex .step_sex_right h2 {
+  font-size: 50px;
+  line-height: 60px;
+  margin-bottom: 60px;
+  padding-right: 140px;
 }
 
 .form .step_sex .step_sex_right label p {
-    font-size: 18px;
-    padding-left: 23px;
+  font-size: 18px;
+  padding-left: 23px;
 }
-
 
 .form .step_sex .step_sex_right .check input[type="radio"][id^="cs"] {
-    display: none;
-  }
-  
+  display: none;
+}
+
 .step_sex .step_sex_right .check label {
-    display: block;
-    position: relative;
-    cursor: pointer;
-    background-color: #CAC8F6;
-    width: 500px;
-    height: 58px;
-    border-radius: 10px;
-    margin-bottom: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  background-color: #cac8f6;
+  width: 500px;
+  height: 58px;
+  border-radius: 10px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-  
+
 .step_sex .step_sex_right .check label:before {
-    background-color: white;
-    color: white;
-    content: " ";
-    display: block;
-    border-radius: 50%;
-    border: 1px solid grey;
-    position: absolute;
-    top: -13px;
-    right: -8px;
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    line-height: 28px;
-    transition-duration: 0.4s;
-    transform: scale(0);
-    z-index: 1;
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: -13px;
+  right: -8px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+  z-index: 1;
 }
-  
+
 .step_sex .step_sex_right .check label p {
-    transition-duration: 0.2s;
-    transform-origin: 50% 50%;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
 }
-  
+
 .step_sex .step_sex_right .check :checked + label:before {
-    content: "✓";
-    background-color: #F9EFDB;
-    color: #352C26;
-    transform: scale(1);
+  content: "✓";
+  background-color: #f9efdb;
+  color: #352c26;
+  transform: scale(1);
 }
-  
+
 .step_sex .step_sex_right .check :checked + label p {
-    transform: scale(0.9);
-    z-index: 1;
+  transform: scale(0.9);
+  z-index: 1;
 }
 
 .form .step_sex_btn {
-    width: 100vw;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    height: 100px;
-    background-color: #fff;
-    opacity: 85%;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 100px;
+  background-color: #fff;
+  opacity: 85%;
 }
 
 .form .step_sex_btn .step_sex_next {
-    color: #000;
-    background-color: #e59400;
-    border-radius: 56.5px;
-    padding: 15px 50px;
-    border: none;
-    margin-top: 25px;
-    margin-right: 25px;
-    float: right;
-    font-size: 20px;
+  color: #000;
+  background-color: #e59400;
+  border-radius: 56.5px;
+  padding: 15px 50px;
+  border: none;
+  margin-top: 25px;
+  margin-right: 25px;
+  float: right;
+  font-size: 20px;
 }
 
 /*step sex*/
 
 /*step seven*/
 
-.step_seven .step_seven_left{
-    width: 47%;
-    background-image: url("../images/image 16.png");
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
+.step_seven .step_seven_left {
+  width: 47%;
+  background-image: url("../images/image 16.png");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-
-.step_seven .step_seven_right{
-    width: 53%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 150px;
+.step_seven .step_seven_right {
+  width: 53%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 150px;
 }
 
 .step_seven .step_seven_right h2 {
-    font-size: 50px;
-    line-height: 60px;
-    margin-bottom: 60px;
+  font-size: 50px;
+  line-height: 60px;
+  margin-bottom: 60px;
 }
 
-.step_seven .step_seven_right label p{
-    font-size: 18px;
-    padding-left: 23px;
+.step_seven .step_seven_right label p {
+  font-size: 18px;
+  padding-left: 23px;
 }
 
 .step_seven .step_seven_right .check input[type="radio"][id^="cv"] {
-    display: none;
-  }
-  
+  display: none;
+}
+
 .step_seven .step_seven_right .check label {
-    display: block;
-    position: relative;
-    cursor: pointer;
-    background-color: #CAC8F6;
-    width: 500px;
-    height: 58px;
-    border-radius: 10px;
-    margin-bottom: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  background-color: #cac8f6;
+  width: 500px;
+  height: 58px;
+  border-radius: 10px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-  
+
 .step_seven .step_seven_right .check label:before {
-    background-color: white;
-    color: white;
-    content: " ";
-    display: block;
-    border-radius: 50%;
-    border: 1px solid grey;
-    position: absolute;
-    top: -13px;
-    right: -8px;
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    line-height: 28px;
-    transition-duration: 0.4s;
-    transform: scale(0);
-    z-index: 1;
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: -13px;
+  right: -8px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+  z-index: 1;
 }
-  
+
 .step_seven .step_seven_right .check label p {
-    transition-duration: 0.2s;
-    transform-origin: 50% 50%;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
 }
-  
+
 .step_seven .step_seven_right .check :checked + label:before {
-    content: "✓";
-    background-color: #F9EFDB;
-    color: #352C26;
-    transform: scale(1);
+  content: "✓";
+  background-color: #f9efdb;
+  color: #352c26;
+  transform: scale(1);
 }
-  
+
 .step_seven .step_seven_right .check :checked + label p {
-    transform: scale(0.9);
-    z-index: 1;
+  transform: scale(0.9);
+  z-index: 1;
 }
 
 .form .step_seven_btn {
-    width: 100vw;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    height: 100px;
-    background-color: #fff;
-    opacity: 85%;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 100px;
+  background-color: #fff;
+  opacity: 85%;
 }
 
 .form .step_seven_btn .step_seven_next {
-    color: #000;
-    background-color: #e59400;
-    border-radius: 56.5px;
-    padding: 15px 50px;
-    border: none;
-    margin-top: 25px;
-    margin-right: 25px;
-    float: right;
-    font-size: 20px;
+  color: #000;
+  background-color: #e59400;
+  border-radius: 56.5px;
+  padding: 15px 50px;
+  border: none;
+  margin-top: 25px;
+  margin-right: 25px;
+  float: right;
+  font-size: 20px;
 }
 
-
 /*step seven*/
-
 
 /*step eight*/
 /* .form .step_eight{
@@ -884,54 +892,52 @@ button {
 /*step nine*/
 
 .form .card .step_nine_left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: -100px;
-    align-items: center;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -100px;
+  align-items: center;
+  height: auto;
 }
 
-.form .card .step_nine_left .step_nine_title h2{
-    font-size: 50px;
-    line-height: 60px;
+.form .card .step_nine_left .step_nine_title h2 {
+  font-size: 50px;
+  line-height: 60px;
 }
 
-.form .card .step_nine_left .step_nine_title p{
-    font-size: 18px;
+.form .card .step_nine_left .step_nine_title p {
+  font-size: 18px;
 }
-
 
 .form .card .step_nine_right {
-    background-color: #FAF3E9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 0;
-    height: 100vh;
+  background-color: #faf3e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0;
+  height: 100vh;
 }
 
-.form .card .step_nine_right input{
-    height: 70px;
-    width: 460px;
-    background: transparent;
-    border: none;
-    padding-left: 140px;
-    margin-top: -120px;
-    font-size: 25px;
-    outline: none;
+.form .card .step_nine_right input {
+  height: 70px;
+  width: 460px;
+  background: transparent;
+  border: none;
+  padding-left: 140px;
+  margin-top: -120px;
+  font-size: 25px;
+  outline: none;
 }
 
 .form .card .step_nine_right input::placeholder {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .form .card .first_step_btn #submit {
-    opacity: 1;
+  opacity: 1;
 }
 /*step nine*/
 
-.form .card{ display: none;}
-  
-
-
+.form .card {
+  display: none;
+}

@@ -15,6 +15,7 @@
 
   .step_two .step_two_right,
   .step_three .step_three_right,
+  .step_three2 .step_three2_right,
   .form .step_sex .step_sex_right,
   .form .step_seven .step_seven_right {
     padding-left: 20px;
@@ -22,6 +23,7 @@
 
   .step_two .step_two_right h2,
   .step_three .step_three_right h2,
+  .step_three2 .step_three2_right h2,
   .form .step_sex .step_sex_right h2,
   .form .step_seven .step_seven_right h2 {
     padding-right: 40px;
@@ -33,6 +35,13 @@
 
   .form .card .right .step_eight_check {
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1384px) {
+  .form .step_five .right .step_five_check:nth-child(1) label,
+  .form .step_five .right .step_five_check:nth-child(19) label {
+    height: 300px;
   }
 }
 
@@ -84,7 +93,7 @@
 
   .form .card .step_two .step_two_right h2,
   .form .card .step_three .step_three_right h2,
-  .step_three2 .step_three2_right h2,
+  .form .card .step_three2 .step_three2_right h2,
   .form .card .step_sex .step_sex_right h2,
   .form .card .step_seven .step_seven_right h2 {
     margin-bottom: 10px;
@@ -114,6 +123,11 @@
   .form .card .step_nine_left,
   .form .card .step_nine_right {
     width: 100%;
+  }
+
+  .form .step_five .right .step_five_check:nth-child(1) label,
+  .form .step_five .right .step_five_check:nth-child(19) label {
+    height: 360px;
   }
 }
 
@@ -205,6 +219,15 @@
     padding-left: 0px;
     text-align: center;
   }
+
+  .form .step_five .right .step_five_check:nth-child(1) img,
+  .form .step_five .right .step_five_check:nth-child(19) img {
+    margin-top: 70px;
+  }
+  .form .step_five .right .step_five_check:nth-child(1) label,
+  .form .step_five .right .step_five_check:nth-child(19) label {
+    height: 650px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -228,6 +251,7 @@
   .form .card .left .first_step_title h1,
   .step_two .step_two_right h2,
   .step_three .step_three_right h2,
+  .step_three2 .step_three2_right h2,
   .form .step_sex .step_sex_right h2,
   .form .step_seven .step_seven_right h2 {
     font-size: 35px;
@@ -244,6 +268,7 @@
   .form .card .left .first_step_title p,
   .step_two .step_two_right .step_two_check label p,
   .step_three .step_three_right .step_three_check label p,
+  .step_three2 .step_three2_right .step_three2_check label p,
   .form .step_sex .step_sex_right .step_sex_check label p,
   .form .step_seven .step_seven_right .step_seven_check label p {
     font-size: 16px;
@@ -254,6 +279,7 @@
   .form .first_step_btn,
   .form .step_two_btn,
   .form .step_three_btn,
+  .form .step_three2_btn,
   .form .step_sex_btn,
   .form .step_seven_btn {
     display: flex;
@@ -264,6 +290,7 @@
   .form .first_step_btn .first_step_next,
   .form .step_two_btn .step_two_next,
   .form .step_three_btn .step_three_next,
+  .form .step_three2_btn .step_three2_next,
   .form .step_sex_btn .step_sex_next,
   .form .step_seven_btn .step_seven_next {
     color: #000;
@@ -278,6 +305,7 @@
 
   .step_two .step_two_right,
   .step_three .step_three_right,
+  .step_three2 .step_three2_right,
   .form .step_sex .step_sex_right,
   .form .step_seven .step_seven_right {
     margin-top: 60px;
@@ -285,6 +313,10 @@
 
   .form .card .right .step_eight_check {
     justify-content: center;
+  }
+
+  .form .card .step_nine_left {
+    margin-top: 10px;
   }
 
   .form .card .step_nine_left .step_nine_title h2 {
@@ -308,5 +340,35 @@
     padding: 0 10px 0 10px;
     font-size: 16px;
     opacity: 0.7;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form .step_five .right .step_five_check:nth-child(1) label {
+    height: 400px;
+  }
+
+  .form .step_five .right .step_five_check:nth-child(14) label {
+    height: 330px;
+    display: flex;
+    justify-content: center;
+  }
+  .form .step_five .right .step_five_check:nth-child(1) img,
+  .form .step_five .right .step_five_check:nth-child(19) img {
+    margin-top: 70px;
+  }
+
+  .form .step_five .right .step_five_check:nth-child(21) label {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+  }
+  .form .step_five .right .step_five_check:nth-child(1) img,
+  .form .step_five .right .step_five_check:nth-child(19) img {
+    margin-top: 70px;
+  }
+  .form .step_five .right .step_five_check:nth-child(1) label,
+  .form .step_five .right .step_five_check:nth-child(19) label {
+    height: 400px;
   }
 }
