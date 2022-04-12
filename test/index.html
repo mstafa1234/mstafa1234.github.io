@@ -7,7 +7,7 @@
     <title>Document</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
-
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
 
@@ -30,11 +30,11 @@
             <div class="first_step_left left">
                 <div class="first_step_title">
                     <h1>Sélectionnez les pièces qui vous font rêver.</h1>
-                    <p>Il est parfois compliqué de faire des choix alors sélectionnez en plusieurs.</p>
+                    <p>Sélectionnez autant de photos quevous le souhaitez !</p>
                 </div>
-                <div class="first_step_arrow">
+                <!-- <div class="first_step_arrow">
                     <img src="images/Arrow 2.png" alt="arrow">
-                </div>
+                </div> -->
             </div>
             <div class="first_step_right right">
                 <div class="first_step_check check">
@@ -179,28 +179,28 @@
             <div class="step_two_right">
                 <h2>Qu'est-ce qui vous amène ici aujourd'hui ? </h2>
                 <div class="step_two_check check">
-                    <input type="radio" name="Step_Two" id="cc1">
-                    <!-- <input type="radio" name="Step_Two" id="cc1" onchange="nextPrev(1)"> -->
+                    <input type="radio" name="Step_Two" id="cc1" onclick="nextPrev(1)">
+                    <!-- <input type="radio" name="Step_Two" id="cc1" onclick="nextPrev(1)"> -->
                     <label for="cc1"><p>Je recherche des inspirations</p></label>
                 </div>
                 <div class="step_two_check check">
-                    <input type="radio" name="Step_Two" id="cc2">
-                    <label for="cc2"><p>J’eménage et j’ai besoin d’aide</p></label>
+                    <input type="radio" name="Step_Two" id="cc2" onclick="nextPrev(1)">
+                    <label for="cc2"><p>J'emménage et j'ai un projet</p></label>
                 </div>
                 <div class="step_two_check check">
-                    <input type="radio" name="Step_Two" id="cc3">
-                    <label for="cc3"><p>Je veux changer la déco de chez moi</p></label>
+                    <input type="radio" name="Step_Two" id="cc3" onclick="nextPrev(1)">
+                    <label for="cc3"><p>Je voudrais changer de décoration</p></label>
                 </div>
                 <div class="step_two_check check">
-                    <input type="radio" name="Step_Two" id="cc4">
-                    <label for="cc4"><p>Ca avait l’air trop cool</p></label>
+                    <input type="radio" name="Step_Two" id="cc4" onclick="nextPrev(1)">
+                    <label for="cc4"><p>Par curiosité</p></label>
                 </div>
                 <div style="width: 1px; height: 70px;"></div>
             </div>
 
-            <div class="first_step_btn">
+            <!-- <div class="first_step_btn">
                 <button class="first_step_next" onclick="nextPrev(1)">Suivant</button>
-            </div>
+            </div> -->
         </div>
         <!-- end step 2-->
 
@@ -210,26 +210,26 @@
                 <!-- <img src="images/image_30.png" alt="" > -->
             </div>
             <div class="step_three_right">
-                <h2>Qu’est ce qui vous préoccupe le plus... </h2>
+                <h2>Qu'est-ce qui vous préoccupe le plus ? </h2>
                 <div class="step_three_check check">
                     <input type="checkbox" name="" id="ce1">
-                    <label for="ce1"><p>Le manque d’espace</p></label>
+                    <label for="ce1"><p>Gagner et optimiser mon espace</p></label>
                 </div>
                 <div class="step_three_check check">
                     <input type="checkbox" name="" id="ce2">
-                    <label for="ce2"><p>L’harmonie globale de ma pièce</p></label>
+                    <label for="ce2"><p>Créer un intérieur à mon gout</p></label>
                 </div>
                 <div class="step_three_check check">
                     <input type="checkbox" name="" id="ce3">
-                    <label for="ce3"><p>Le manque de flexibilité (sport, télétravail)</p></label>
+                    <label for="ce3"><p>Avoir un intérieur plus flexible (télétravail, sport...)</p></label>
                 </div>
                 <div class="step_three_check check">
                     <input type="checkbox" name="" id="ce4">
-                    <label for="ce4"><p>Autre chose</p></label>
+                    <label for="ce4"><p>Rien ne me préoccupe, tout va bien </p></label>
                 </div>
                 <div class="step_three_check check">
                     <input type="checkbox" name="" id="ce5">
-                    <label for="ce5"><p>Rien ne me préoccupe,tout va bien</p></label>
+                    <label for="ce5"><p>Autre chose</p></label>
                 </div>
                 <div style="width: 1px; height: 70px;"></div>
             </div>
@@ -247,18 +247,22 @@
                 <!-- <img src="images/image_30.png" alt="" > -->
             </div>
             <div class="step_three2_right">
-                <h2>Avec qui cohabitez vous ? </h2>
+                <h2>Avec qui habitez-vous ? </h2>
                 <div class="step_three2_check check">
                     <input type="checkbox" name="" id="cee1">
-                    <label for="cee1"><p>Moi (et mon chat...)</p></label>
+                    <label for="cee1"><p>Seul (avec mon chat...)</p></label>
                 </div>
                 <div class="step_three2_check check">
                     <input type="checkbox" name="" id="cee2">
-                    <label for="cee2"><p>Mon/Ma conjoint(e)</p></label>
+                    <label for="cee2"><p>Avec mon/ma conjoint(e)</p></label>
                 </div>
                 <div class="step_three2_check check">
                     <input type="checkbox" name="" id="cee3">
-                    <label for="cee3"><p>Ma petite famille</p></label>
+                    <label for="cee3"><p>En collocation</p></label>
+                </div>
+                <div class="step_three2_check check">
+                    <input type="checkbox" name="" id="cee4">
+                    <label for="cee4"><p>Avec ma petite famille</p></label>
                 </div>
                 <div style="width: 1px; height: 70px;"></div>
             </div>
@@ -367,12 +371,12 @@
         <div class="card step_five data-step" id="step4">
             <div class="step_five_left left">
                 <div class="first_step_title">
-                    <h1>Sélectionnez vos coups de coeur</h1>
-                    <p>Il est parfois compliqué de faire des choix alors choissiez en plusieurs.</p>
+                    <h1>Sélectionnez vos coups de coeur.</h1>
+                    <p>Sélectionnez autant de photos que vous le souhaitez !</p>
                 </div>
-                <div class="first_step_arrow">
+                <!-- <div class="first_step_arrow">
                     <img src="images/Arrow 2.png" alt="arrow">
-                </div>
+                </div> -->
             </div>
             
             <div class="step_five_right right">
@@ -502,6 +506,7 @@
             </div>
 
             <div class="first_step_btn">
+                <a id="skip" onclick="nextPrev(1)">Passer à la suite</a>
                 <button class="first_step_next" data-next onclick="nextPrev(1)" disabled>Suivant</button>
             </div>
 
@@ -517,23 +522,23 @@
             <div class="step_sex_right">
                 <h2>Pour vous un dimanche brocante, c’est... </h2>
                 <div class="step_sex_check check">
-                    <input type="radio" name="dimanche" id="cs1">
-                    <label for="cs1"><p>Une belle idée</p></label>
+                    <input type="radio" name="dimanche" id="cs1" onclick="nextPrev(1)">
+                    <label for="cs1"><p>Une jolie idée</p></label>
                 </div>
                 <div class="step_sex_check check">
-                    <input type="radio" name="dimanche" id="cs2">
+                    <input type="radio" name="dimanche" id="cs2" onclick="nextPrev(1)">
                     <label for="cs2"><p>Une habitude</p></label>
                 </div>
                 <div class="step_sex_check check">
-                    <input type="radio" name="dimanche" id="cs3">
+                    <input type="radio" name="dimanche" id="cs3" onclick="nextPrev(1)">
                     <label for="cs3"><p>Un calvaire</p></label>
                 </div>
                 <div style="width: 1px; height: 150px;"></div>
             </div>
 
-            <div class="step_sex_btn">
+            <!-- <div class="step_sex_btn">
                 <button class="step_sex_next" data-next onclick="nextPrev(1)" disabled>Suivant</button>
-            </div>
+            </div> -->
         </div>
         <!-- end step 6-->
 
@@ -543,25 +548,25 @@
                 <!-- <img src="images/image_30.png" alt="" > -->
             </div>
             <div class="step_seven_right">
-                <h2>Pour vous se sentir bien chez vous c’est </h2>
+                <h2>Pour vous se sentir bien chez soi, c'est... </h2>
                 <div class="step_seven_check check">
-                    <input type="radio" name="sentir" id="cv1">
+                    <input type="radio" name="sentir" id="cv1" onclick="nextPrev(1)">
                     <label for="cv1"><p>Un intérieur où on peut recevoir </p></label>
                 </div>
                 <div class="step_seven_check check">
-                    <input type="radio" name="sentir" id="cv2">
+                    <input type="radio" name="sentir" id="cv2" onclick="nextPrev(1)">
                     <label for="cv2"><p>Un intérieur bien rangé et optimisé</p></label>
                 </div>
                 <div class="step_seven_check check">
-                    <input type="radio" name="sentir" id="cv3">
+                    <input type="radio" name="sentir" id="cv3" onclick="nextPrev(1)">
                     <label for="cv3"><p>Des bons moments en famille</p></label>
                 </div>
                 <div style="width: 1px; height: 150px;"></div>
             </div>
 
-            <div class="step_seven_btn">
+            <!-- <div class="step_seven_btn">
                 <button class="step_seven_next" data-next onclick="nextPrev(1)" disabled>Suivant</button>
-            </div>
+            </div> -->
         </div>
         <!-- end step 7-->
         
@@ -692,11 +697,11 @@
             <div class="step_nine_left left">
                 <div class="step_nine_title">
                     <h2>Nous y sommes presque !</h2>
-                    <p>Entrez votre email pour découvrir votre diagnostique. </p>
+                    <p>Entrez votre email pour découvrir votre diagnostic. </p>
                 </div>
             </div>
             <div class="step_nine_right right">
-                <input type="text" placeholder="Ecrivez votre email ici">
+                <input type="email" placeholder="Ecrivez votre email ici" required>
             </div>
             <div class="first_step_btn">
                 <button type="submit" class="first_step_next" id="submit">Mon diagnostic</button>

@@ -23,7 +23,7 @@ h2 {
 p {
   font-family: "SuisseIntl", Arial, sans-serif;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 button {
@@ -55,8 +55,8 @@ button {
   position: fixed;
   display: none;
   top: 0;
-  background-color: #cac8f6;
-  height: 10px;
+  background-color: #000;
+  height: 8px;
   z-index: 1;
   transition: 0.4s linear;
   transition-property: width, background-color;
@@ -73,7 +73,6 @@ button {
 .form .card .left {
   width: 45%;
   display: flex;
-  flex-direction: row-reverse;
   height: 100vh;
 }
 
@@ -82,6 +81,7 @@ button {
   align-self: center;
   padding: 0 42px 0 42px;
   position: fixed;
+  width: 48%;
 }
 
 .form .card .left .first_step_title h1 {
@@ -92,7 +92,7 @@ button {
 }
 
 .form .card .left .first_step_title p {
-  font-size: 20px;
+  font-size: 18px;
   padding-right: 105px;
   margin-left: 55px;
 }
@@ -161,6 +161,7 @@ button {
   display: block;
   position: relative;
   cursor: pointer;
+  padding-bottom: 20px;
 }
 
 .form .card .right .check label:before {
@@ -204,8 +205,7 @@ button {
   bottom: 0;
   right: 0;
   height: 100px;
-  background-color: #fff;
-  opacity: 85%;
+  background-color: rgb(255 255 255 / 85%);
 }
 
 .form .first_step_btn .first_step_next {
@@ -217,7 +217,11 @@ button {
   margin-top: 25px;
   margin-right: 50px;
   float: right;
-  font-size: 20px;
+  font-size: 18px;
+}
+
+.form .first_step_btn .first_step_next:hover {
+  background-color: #f4e6e6;
 }
 
 /*step 1*/
@@ -260,7 +264,7 @@ button {
   cursor: pointer;
   background-color: #cac8f6;
   width: 500px;
-  height: 58px;
+  height: 48px;
   border-radius: 10px;
   margin-bottom: 28px;
   display: flex;
@@ -290,6 +294,7 @@ button {
 .step_two .step_two_right .check label p {
   transition-duration: 0.2s;
   transform-origin: 50% 50%;
+  font-size: 18px;
 }
 
 .step_two .step_two_right .check :checked + label:before {
@@ -310,8 +315,7 @@ button {
   bottom: 0;
   right: 0;
   height: 100px;
-  background-color: #fff;
-  opacity: 85%;
+  background-color: rgb(255 255 255 / 85%);
 }
 
 .form .step_two_btn .step_two_next {
@@ -325,6 +329,9 @@ button {
   float: right;
   font-size: 20px;
 }
+.form .step_two_btn .step_two_next :hover {
+  background-color: #f4e6e6;
+}
 
 /*step 2*/
 
@@ -332,7 +339,7 @@ button {
 
 .step_three .step_three_left {
   width: 47%;
-  background-image: url("../images/SLIDE 3/slide3insidy.jpeg");
+  background-image: url("../images/SLIDE 3/12_Mim-Design_Sussex-St_25 (1).jpeg");
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -412,6 +419,7 @@ button {
 .step_three2 .step_three2_right .check label p {
   transition-duration: 0.2s;
   transform-origin: 50% 50%;
+  font-size: 18px;
 }
 
 .step_three .step_three_right .check :checked + label:before,
@@ -435,8 +443,7 @@ button {
   bottom: 0;
   right: 0;
   height: 100px;
-  background-color: #fff;
-  opacity: 85%;
+  background-color: rgb(255 255 255 / 85%);
 }
 
 .form .step_three_btn .step_three_next,
@@ -450,6 +457,11 @@ button {
   margin-right: 25px;
   float: right;
   font-size: 20px;
+}
+
+.form .step_three_btn .step_three_next:hover,
+.form .step_three2_btn .step_three2_next:hover {
+  background-color: #f4e6e6;
 }
 
 /*step 3*/
@@ -523,12 +535,12 @@ button {
   margin-bottom: 15px;
 }
 
-.form .step_five .right .step_five_check:nth-child(1) label,
-.form .step_five .right .step_five_check:nth-child(19) label {
-  height: 330px;
-  /* display: flex;
-    justify-content: center; */
-}
+/* .form .step_five .right .step_five_check:nth-child(1) label, .form .step_five .right .step_five_check:nth-child(19) label{
+    /* height: 330px; */
+/* display: flex;
+    justify-content: center; 
+} 
+*/
 
 .form .step_five .right .step_five_check label h1 {
   line-height: 60px;
@@ -566,9 +578,20 @@ button {
   width: 80% !important;
 }
 
-.form .step_five .right .step_five_check:nth-child(1) img,
-.form .step_five .right .step_five_check:nth-child(19) img {
-  margin-top: 40px;
+.form .step_five .right .step_five_check:nth-child(1) label,
+.form .step_five .right .step_five_check:nth-child(19) label {
+  padding: 50px 0px;
+}
+
+.form .step_five #skip {
+  position: absolute;
+  right: 236px;
+  font-size: 18px;
+  font-family: "SuisseIntl", Arial, sans-serif;
+  margin-top: 39px;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /*step 5*/
@@ -613,7 +636,7 @@ button {
   cursor: pointer;
   background-color: #cac8f6;
   width: 500px;
-  height: 58px;
+  height: 48px;
   border-radius: 10px;
   margin-bottom: 28px;
   display: flex;
@@ -643,6 +666,7 @@ button {
 .step_sex .step_sex_right .check label p {
   transition-duration: 0.2s;
   transform-origin: 50% 50%;
+  font-size: 18px;
 }
 
 .step_sex .step_sex_right .check :checked + label:before {
@@ -663,8 +687,7 @@ button {
   bottom: 0;
   right: 0;
   height: 100px;
-  background-color: #fff;
-  opacity: 85%;
+  background-color: rgb(255 255 255 / 85%);
 }
 
 .form .step_sex_btn .step_sex_next {
@@ -677,6 +700,10 @@ button {
   margin-right: 25px;
   float: right;
   font-size: 20px;
+}
+
+.form .step_sex_btn .step_sex_next:hover {
+  background-color: #f4e6e6;
 }
 
 /*step sex*/
@@ -720,7 +747,7 @@ button {
   cursor: pointer;
   background-color: #cac8f6;
   width: 500px;
-  height: 58px;
+  height: 48px;
   border-radius: 10px;
   margin-bottom: 28px;
   display: flex;
@@ -770,8 +797,7 @@ button {
   bottom: 0;
   right: 0;
   height: 100px;
-  background-color: #fff;
-  opacity: 85%;
+  background-color: rgb(255 255 255 / 85%);
 }
 
 .form .step_seven_btn .step_seven_next {
@@ -784,6 +810,10 @@ button {
   margin-right: 25px;
   float: right;
   font-size: 20px;
+}
+
+.form .step_seven_btn .step_seven_next:hover {
+  background-color: #f4e6e6;
 }
 
 /*step seven*/
